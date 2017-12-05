@@ -1,0 +1,6 @@
+node_modules
+npm-debug
+npm*
+
+resume\.sublime-project
+resume\.sublime-workspace
