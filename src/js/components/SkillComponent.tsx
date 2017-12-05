@@ -7,7 +7,7 @@ export interface UserProps {
 }
 
 export class SkillComponent extends React.Component<UserProps, {}> {
-    constructor(props: any) {
+    constructor (props: any) {
         super(props);
     }
 
