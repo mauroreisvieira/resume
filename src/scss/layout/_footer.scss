@@ -1,10 +1,8 @@
 .footer {
-  align-items: center;
-  background-color: map-get($u-color-grey, 'base');
   display: flex;
-  grid-area: footer;
-  height: $theme-footer-height;
+  align-items: center;
   justify-content: center;
-  text-align: center;
   width: 100%;
+  grid-area: footer;
+  text-align: center;
 }

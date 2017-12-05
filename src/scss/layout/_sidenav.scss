@@ -1,11 +1,7 @@
-$l-sidenav-width-default: 100px;
-
 .sidenav {
-  align-items: center;
-  background-color: map-get($u-color-grey, 'base');
   display: flex;
-  grid-area: sidenav;
+  align-items: center;
   justify-content: center;
+  grid-area: sidenav;
   text-align: center;
-  width: $l-sidenav-width-default;
 }

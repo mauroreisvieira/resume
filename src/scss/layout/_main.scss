@@ -1,10 +1,8 @@
 .main {
-  align-items: center;
-  background: $u-color-white;
-  box-sizing: border-box;
   display: block;
-  grid-area: main;
-  min-height: calc(100vh - ((#{$theme-header-height} + #{$theme-footer-height}) + (#{$theme-gutter} * 2) ));
-  padding: $theme-padding;
+  align-items: center;
+  box-sizing: border-box;
   width: 100%;
+  padding: $theme-padding;
+  grid-area: main;
 }

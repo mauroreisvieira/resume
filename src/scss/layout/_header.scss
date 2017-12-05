@@ -1,10 +1,8 @@
 .header {
-  align-items: center;
-  background-color: map-get($u-color-grey, 'base');
   display: flex;
-  grid-area: header;
-  height: $theme-header-height;
+  align-items: center;
   justify-content: center;
-  text-align: center;
   width: 100%;
+  grid-area: header;
+  text-align: center;
 }

@@ -1,6 +1,6 @@
 # Resume
 
-This repository contais my skills, but you can clone them, and chage for your skills.
+This repository contains my skills, but you can clone, and change for your skills
 
 ## Supported Browsers:
 - Google Chrome 62+

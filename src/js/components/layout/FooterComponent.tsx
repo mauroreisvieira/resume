@@ -6,8 +6,10 @@ export class FooterComponent extends React.Component {
     }
 
     public render(): any {
-        return (<div className='content'>
+        return (
+            <div className='content'>
                 <p>Footer</p>
-            </div>);
+            </div>
+        );
     }
 }

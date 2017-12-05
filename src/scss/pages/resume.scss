@@ -1,28 +1,26 @@
 // Global
-@import '../utilities/variables';
+@import "../utilities/variables";
 
 // Layout
-@import '../layout/header';
-@import '../layout/sidenav';
-@import '../layout/main';
-@import '../layout/footer';
+@import "../layout/header";
+@import "../layout/sidenav";
+@import "../layout/main";
+@import "../layout/footer";
 
 html {
-  overflow-x: hidden;
   width: 100%;
+  overflow-x: hidden;
 }
 
 body {
-  background-color: $u-color-white;
   display: grid;
   grid-auto-columns: auto;
   grid-column-gap: $theme-gutter;
-  // grid-row-gap: $theme-gutter;
   grid-template-areas:
-  'sidenav header'
-  'sidenav main'
-  'sidenav footer';
-  margin: 0 auto;
-  min-height: 100vh;
+  "sidenav header"
+  "sidenav main"
+  "sidenav footer";
   width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
 }
