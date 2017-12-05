@@ -15,8 +15,7 @@ export default class Dashboard {
     public user: User;
 
     constructor () {
-        this.user = new User('red', 10, 5, 'Car');
-        console.log(this.user);
+        this.user = new User('Mauro', 27);
         this.init();
     }
 
@@ -32,7 +31,7 @@ export default class Dashboard {
         );
 
         ReactDOM.render(
-            <SkillComponent user={this.user} />,
+            <SkillComponent  name={this.user.name} age={this.user.age} />,
             document.getElementById('profile')
         );
 

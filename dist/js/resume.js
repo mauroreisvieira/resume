@@ -86,14 +86,13 @@ var SkillComponent_1 = __webpack_require__(7);
 __webpack_require__(8);
 var Dashboard = /** @class */ (function () {
     function Dashboard() {
-        this.user = new User_1.default('red', 10, 5, 'Car');
-        console.log(this.user);
+        this.user = new User_1.default('Mauro', 27);
         this.init();
     }
     Dashboard.prototype.init = function () {
         ReactDOM.render(React.createElement(HeaderComponent_1.HeaderComponent, null), document.getElementById('header'));
         ReactDOM.render(React.createElement(MenuComponent_1.MenuComponent, null), document.getElementById('sidenav'));
-        ReactDOM.render(React.createElement(SkillComponent_1.SkillComponent, { user: this.user }), document.getElementById('profile'));
+        ReactDOM.render(React.createElement(SkillComponent_1.SkillComponent, { name: this.user.name, age: this.user.age }), document.getElementById('profile'));
         ReactDOM.render(React.createElement(FooterComponent_1.FooterComponent, null), document.getElementById('footer'));
     };
     return Dashboard;
@@ -116,11 +115,9 @@ module.exports = ReactDOM;
 
 Object.defineProperty(exports, "__esModule", { value: true });
 var User = /** @class */ (function () {
-    function User(color, age, numWheels, vehicleType) {
-        this.color = color;
+    function User(name, age) {
+        this.name = name;
         this.age = age;
-        this.numWheels = numWheels;
-        this.vehicleType = vehicleType;
     }
     return User;
 }());
@@ -247,19 +244,21 @@ var React = __webpack_require__(0);
 var SkillComponent = /** @class */ (function (_super) {
     __extends(SkillComponent, _super);
     function SkillComponent(props) {
-        var _this = _super.call(this, props) || this;
-        console.log(_this.props.user);
-        return _this;
+        return _super.call(this, props) || this;
     }
     SkillComponent.prototype.render = function () {
         return React.createElement("div", null,
+            React.createElement("h2", null, "Profile"),
+            React.createElement("div", null,
+                "Name: ",
+                this.props.name),
             React.createElement("div", null,
                 "Age: ",
                 this.props.age));
     };
     return SkillComponent;
 }(React.Component));
-exports.default = SkillComponent;
+exports.SkillComponent = SkillComponent;
 
 
 /***/ }),

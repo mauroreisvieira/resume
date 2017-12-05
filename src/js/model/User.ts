@@ -1,13 +1,9 @@
 export default class User {
-    public color: string;
+    public name: string;
     public age: number;
-    public numWheels: number;
-    public vehicleType: any;
 
-    constructor (color: string, age: number, numWheels: number, vehicleType: any) {
-        this.color = color;
+    constructor (name: string, age: number) {
+        this.name = name;
         this.age = age;
-        this.numWheels = numWheels;
-        this.vehicleType = vehicleType;
     }
 }
