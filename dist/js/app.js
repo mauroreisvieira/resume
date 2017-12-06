@@ -280,7 +280,7 @@ var OptionsComponent = /** @class */ (function (_super) {
                         React.createElement("input", { id: 'firstName', type: 'text', value: 'Mauro', placeholder: '', className: 'form__input form__label--large' })),
                     React.createElement("div", { className: 'form__field col-large-6' },
                         React.createElement("label", { htmlFor: 'lastName', className: 'form__label' }, "Last Name"),
-                        React.createElement("input", { id: 'lastName', type: 'text', value: 'Reis Vieirs', placeholder: '', className: 'form__input form__label--large' })),
+                        React.createElement("input", { id: 'lastName', type: 'text', value: 'Reis Vieira', placeholder: '', className: 'form__input form__label--large' })),
                     React.createElement("div", { className: 'form__field col-large-6' },
                         React.createElement("label", { htmlFor: 'phoneNumber', className: 'form__label' }, "Phone Number"),
                         React.createElement("input", { id: 'phoneNumber', type: 'text', value: '917771054', placeholder: '', className: 'form__input form__label--large' })),

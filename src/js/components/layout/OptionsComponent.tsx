@@ -29,7 +29,7 @@ export class OptionsComponent extends React.Component  {
                             <label htmlFor='lastName' className='form__label'>
                                 Last Name
                             </label>
-                            <input id='lastName' type='text' value='Reis Vieirs' placeholder='' className='form__input form__label--large' />
+                            <input id='lastName' type='text' value='Reis Vieira' placeholder='' className='form__input form__label--large' />
                         </div>
                         <div className='form__field col-large-6'>
                             <label htmlFor='phoneNumber' className='form__label'>
