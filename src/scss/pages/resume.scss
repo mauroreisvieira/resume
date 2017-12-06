@@ -1,26 +1,31 @@
-// Global
 @import "../utilities/variables";
 
-// Layout
-@import "../layout/header";
-@import "../layout/sidenav";
-@import "../layout/main";
-@import "../layout/footer";
-
-html {
-  width: 100%;
-  overflow-x: hidden;
+* {
+  box-sizing: border-box;
 }
 
 body {
-  display: grid;
-  grid-auto-columns: auto;
-  grid-column-gap: $theme-gutter;
-  grid-template-areas:
-  "sidenav header"
-  "sidenav main"
-  "sidenav footer";
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
   width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background: #f3f3f3;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 300px calc(100% - 300px);
+  grid-template-areas:
+  "header header"
+  "sidebar content"
+  "sidebar footer";
+}
+
+.content {
+  flex-direction: column;
   min-height: 100vh;
-  margin: 0 auto;
+  grid-area: content;
+  background-color: #fff;
 }

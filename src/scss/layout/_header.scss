@@ -1,8 +1,13 @@
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
   grid-area: header;
-  text-align: center;
+
+  .logo {
+    display: block;
+    max-width: 100px;
+    margin: auto;
+
+    img {
+      width: 100%;
+    }
+  }
 }

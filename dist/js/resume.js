@@ -144,8 +144,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(0);
 var FooterComponent = /** @class */ (function (_super) {
     __extends(FooterComponent, _super);
-    function FooterComponent() {
-        return _super !== null && _super.apply(this, arguments) || this;
+    function FooterComponent(props) {
+        return _super.call(this, props) || this;
     }
     FooterComponent.prototype.render = function () {
         return (React.createElement("div", { className: 'content' },
@@ -176,8 +176,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(0);
 var HeaderComponent = /** @class */ (function (_super) {
     __extends(HeaderComponent, _super);
-    function HeaderComponent() {
-        return _super !== null && _super.apply(this, arguments) || this;
+    function HeaderComponent(props) {
+        return _super.call(this, props) || this;
     }
     HeaderComponent.prototype.render = function () {
         return (React.createElement("div", { className: 'content' },
@@ -208,15 +208,13 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(0);
 var MenuComponent = /** @class */ (function (_super) {
     __extends(MenuComponent, _super);
-    function MenuComponent() {
-        return _super !== null && _super.apply(this, arguments) || this;
+    function MenuComponent(props) {
+        return _super.call(this, props) || this;
     }
     MenuComponent.prototype.render = function () {
         return (React.createElement("ul", { className: 'menu' },
             React.createElement("li", { className: 'menu__item' },
-                React.createElement("a", { href: './index.html', className: 'menu__item__link' }, "Home")),
-            React.createElement("li", { className: 'menu__item menu__item--active' },
-                React.createElement("a", { href: './styleguide.html', className: 'menu__item__link' }, "Styleguide"))));
+                React.createElement("a", { href: './index.html', className: 'menu__item__link' }, "Home"))));
     };
     return MenuComponent;
 }(React.Component));
