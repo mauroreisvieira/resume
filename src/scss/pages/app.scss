@@ -1,4 +1,8 @@
 @import "../utilities/variables";
+@import "../layout/header";
+@import "../layout/aside";
+@import "../layout/main";
+@import "../layout/footer";
 
 body {
   width: 100%;
@@ -10,16 +14,7 @@ body {
 
 .wrapper {
   display: grid;
-  grid-template-columns: 100%;
-  grid-template-areas:
-    "header"
-    "content"
-    "footer";
+  grid-template-columns: 280px calc(100% - 280px);
+  grid-template-areas: "header header" "aside main" "aside footer";
 }
 
-.content {
-  flex-direction: column;
-  min-height: 100vh;
-  grid-area: content;
-  background-color: white;
-}

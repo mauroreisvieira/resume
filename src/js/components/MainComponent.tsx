@@ -1,8 +1,5 @@
 import * as React from 'react';
 
-import { FooterComponent } from './layout/FooterComponent';
-import { HeaderComponent } from './layout/HeaderComponent';
-
 import { ProfileComponent } from './ProfileComponent';
 
 export class MainComponent extends React.Component {
@@ -12,10 +9,8 @@ export class MainComponent extends React.Component {
 
     public render(): any {
         return (
-            <main className='wrapper'>
-                <HeaderComponent />
+            <main className='main'>
                 <ProfileComponent />
-                <FooterComponent />
             </main>
         );
     }

@@ -1,8 +1,7 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-import { MainComponent } from './components/MainComponent';
-import {SkillComponent} from './components/SkillComponent';
+import { ResumeComponent } from './components/ResumeComponent';
 
 import '../scss/pages/app.scss';
 
@@ -14,7 +13,7 @@ export default class App {
 
     public init(): void {
         ReactDOM.render(
-            <MainComponent />,
+            <ResumeComponent />,
             document.body
         );
     }

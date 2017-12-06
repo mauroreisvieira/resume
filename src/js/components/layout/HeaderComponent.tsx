@@ -10,7 +10,7 @@ export class HeaderComponent extends React.Component  {
             <header className='header navbar navbar--spacebetween bg-blue text-white'>
                 <div className='navbar__brand'>
                     <a href='/' title='Resume'>
-                        <span className='monospace uppercase thin text-white x-large'>Resume</span>
+                        <span className='uppercase x-bold text-white x-large'>Resume</span>
                     </a>
                 </div>
                 <div className='navbar__menu'>
