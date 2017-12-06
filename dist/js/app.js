@@ -79,7 +79,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(0);
 var ReactDOM = __webpack_require__(2);
 var ResumeComponent_1 = __webpack_require__(14);
-__webpack_require__(8);
+__webpack_require__(20);
 var App = /** @class */ (function () {
     function App() {
         this.init();
@@ -117,6 +117,7 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(0);
+var EmploymentComponent_1 = __webpack_require__(15);
 var ProfileComponent_1 = __webpack_require__(6);
 var MainComponent = /** @class */ (function (_super) {
     __extends(MainComponent, _super);
@@ -125,7 +126,8 @@ var MainComponent = /** @class */ (function (_super) {
     }
     MainComponent.prototype.render = function () {
         return (React.createElement("main", { className: 'main' },
-            React.createElement(ProfileComponent_1.ProfileComponent, null)));
+            React.createElement(ProfileComponent_1.ProfileComponent, null),
+            React.createElement(EmploymentComponent_1.EmploymentComponent, null)));
     };
     return MainComponent;
 }(React.Component));
@@ -225,6 +227,7 @@ var __extends = (this && this.__extends) || (function () {
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(0);
 var User_1 = __webpack_require__(7);
+__webpack_require__(16);
 var ProfileComponent = /** @class */ (function (_super) {
     __extends(ProfileComponent, _super);
     function ProfileComponent(props) {
@@ -233,16 +236,12 @@ var ProfileComponent = /** @class */ (function (_super) {
         return _this;
     }
     ProfileComponent.prototype.render = function () {
-        return (React.createElement("div", { className: 'content' },
-            React.createElement("h2", null, "Profile"),
-            React.createElement("p", null,
-                React.createElement("strong", null, "Name:"),
-                " ",
-                this.user.name),
-            React.createElement("p", null,
-                React.createElement("strong", null, "Age:"),
-                " ",
-                this.user.age)));
+        return (React.createElement("div", { className: 'app-profile' },
+            React.createElement("div", { className: 'row' },
+                React.createElement("div", { className: 'col-large-4' },
+                    React.createElement("h4", { className: 'x-bold' }, "Profile")),
+                React.createElement("div", { className: 'col-large-8' },
+                    React.createElement("p", null, "I'm a Portuguese developer, fascinated by web development, who likes what they do. I love to learn, and share my knowledge, in order to enrich my portfolio. I'm an \"Apple Fanboy\", as well as a Sublime Text evangelist (I love this text editor for code).")))));
     };
     return ProfileComponent;
 }(React.Component));
@@ -267,12 +266,7 @@ exports.default = User;
 
 
 /***/ }),
-/* 8 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
+/* 8 */,
 /* 9 */,
 /* 10 */,
 /* 11 */,
@@ -364,6 +358,89 @@ var ResumeComponent = /** @class */ (function (_super) {
 }(React.Component));
 exports.ResumeComponent = ResumeComponent;
 
+
+/***/ }),
+/* 15 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+Object.defineProperty(exports, "__esModule", { value: true });
+var React = __webpack_require__(0);
+__webpack_require__(18);
+var EmploymentComponent = /** @class */ (function (_super) {
+    __extends(EmploymentComponent, _super);
+    function EmploymentComponent(props) {
+        return _super.call(this, props) || this;
+    }
+    EmploymentComponent.prototype.render = function () {
+        return (React.createElement("div", { className: 'app-employment' },
+            React.createElement("div", { className: 'row' },
+                React.createElement("div", { className: 'col-large-12' },
+                    React.createElement("h4", { className: 'x-bold' }, "Employment History")),
+                React.createElement("div", { className: 'col-large-4' },
+                    React.createElement("ul", { className: 'list' },
+                        React.createElement("li", { className: 'list__item' },
+                            React.createElement("div", { className: 'flex flex--column' },
+                                React.createElement("p", null, "Apr 2013 - May 2016"),
+                                React.createElement("p", { className: 'uppercase text-salmon' }, "Leiria"))),
+                        React.createElement("li", { className: 'list__item' },
+                            React.createElement("div", { className: 'flex flex--column' },
+                                React.createElement("p", null, "May 2016 - Oct 2017"),
+                                React.createElement("p", { className: 'uppercase text-salmon' }, "Leiria"))),
+                        React.createElement("li", { className: 'list__item' },
+                            React.createElement("div", { className: 'flex flex--column' },
+                                React.createElement("p", null, "Oct 2017 - Present"),
+                                React.createElement("p", { className: 'uppercase text-salmon' }, "Leiria"))))),
+                React.createElement("div", { className: 'col-large-8' },
+                    React.createElement("ul", { className: 'list' },
+                        React.createElement("li", { className: 'list__item' },
+                            React.createElement("div", { className: 'flex flex--column' },
+                                React.createElement("p", null, "Web Developer"),
+                                React.createElement("p", { className: 'uppercase text-salmon' }, "WayAcross"))),
+                        React.createElement("li", { className: 'list__item' },
+                            React.createElement("div", { className: 'flex flex--column' },
+                                React.createElement("p", null, "Senio Front end Developer"),
+                                React.createElement("p", { className: 'uppercase text-salmon' }, "Hi INTERACTIVE"))),
+                        React.createElement("li", { className: 'list__item' },
+                            React.createElement("div", { className: 'flex flex--column' },
+                                React.createElement("p", null, "Senio Front end Developer"),
+                                React.createElement("p", { className: 'uppercase text-salmon' }, "Namecheap"))))))));
+    };
+    return EmploymentComponent;
+}(React.Component));
+exports.EmploymentComponent = EmploymentComponent;
+
+
+/***/ }),
+/* 16 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 17 */,
+/* 18 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 19 */,
+/* 20 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);

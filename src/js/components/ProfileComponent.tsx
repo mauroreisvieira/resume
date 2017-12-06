@@ -1,6 +1,8 @@
 import * as React from 'react';
 import User from './../model/User';
 
+import '../../scss/theme/profile.scss';
+
 export class ProfileComponent extends React.Component {
     public user: User;
 
@@ -11,10 +13,15 @@ export class ProfileComponent extends React.Component {
 
     public render(): any {
         return (
-            <div className='content'>
-                <h2>Profile</h2>
-                <p><strong>Name:</strong> { this.user.name }</p>
-                <p><strong>Age:</strong> { this.user.age }</p>
+            <div className='app-profile'>
+                <div className='row'>
+                    <div className='col-large-4'>
+                        <h4 className='x-bold'>Profile</h4>
+                     </div>
+                    <div className='col-large-8'>
+                        <p>I'm a Portuguese developer, fascinated by web development, who likes what they do. I love to learn, and share my knowledge, in order to enrich my portfolio. I'm an "Apple Fanboy", as well as a Sublime Text evangelist (I love this text editor for code).</p>
+                    </div>
+                </div>
             </div>
         );
     }

@@ -1,5 +1,6 @@
 import * as React from 'react';
 
+import { EmploymentComponent } from './EmploymentComponent';
 import { ProfileComponent } from './ProfileComponent';
 
 export class MainComponent extends React.Component {
@@ -11,6 +12,7 @@ export class MainComponent extends React.Component {
         return (
             <main className='main'>
                 <ProfileComponent />
+                <EmploymentComponent />
             </main>
         );
     }

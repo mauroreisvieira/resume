@@ -3,7 +3,7 @@ import * as ReactDOM from 'react-dom';
 
 import { ResumeComponent } from './components/ResumeComponent';
 
-import '../scss/pages/app.scss';
+import '../scss/app.scss';
 
 export default class App {
 
