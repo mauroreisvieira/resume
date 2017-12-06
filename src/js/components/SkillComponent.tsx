@@ -10,7 +10,7 @@ export class SkillComponent extends React.Component {
     public dotSkill(num: number): any {
         const arrItem = [];
         for (let i = 1; i < 6; ++i) {
-            if (i < num) {
+            if (i <= num) {
                 arrItem.push('●');
             } else {
                 arrItem.push('○');
@@ -32,57 +32,66 @@ export class SkillComponent extends React.Component {
                     <div className='col-large-3'>
                         <ul className='list'>
                             <li className='list__item'>
-                                <p>CSS/SCSS</p>
+                                <p>HTML</p>
                             </li>
                             <li className='list__item'>
                                 <p>CSS/SCSS</p>
                             </li>
                             <li className='list__item'>
-                                <p>CSS/SCSS</p>
+                                <p>JavaScript</p>
                             </li>
                             <li className='list__item'>
-                                <p>CSS/SCSS</p>
+                                <p>Typescript</p>
                             </li>
                             <li className='list__item'>
-                                <p>CSS/SCSS</p>
+                                <p>ReactJS</p>
+                            </li>
+                            <li className='list__item'>
+                                <p>VueJS</p>
                             </li>
                         </ul>
                     </div>
                     <div className='col-large-3'>
                         <ul className='list'>
                             <li className='list__item'>
-                                <p className='text-salmon'>{this.dotSkill(4)}</p>
+                                <p className='text-salmon'>{this.dotSkill(5)}</p>
+                            </li>
+                            <li className='list__item'>
+                                <p className='text-salmon'>{this.dotSkill(5)}</p>
                             </li>
                             <li className='list__item'>
                                 <p className='text-salmon'>{this.dotSkill(4)}</p>
                             </li>
                             <li className='list__item'>
-                                <p className='text-salmon'>{this.dotSkill(4)}</p>
+                                <p className='text-salmon'>{this.dotSkill(3)}</p>
                             </li>
                             <li className='list__item'>
-                                <p className='text-salmon'>{this.dotSkill(4)}</p>
+                                <p className='text-salmon'>{this.dotSkill(3)}</p>
                             </li>
                             <li className='list__item'>
-                                <p className='text-salmon'>{this.dotSkill(4)}</p>
+                                <p className='text-salmon'>{this.dotSkill(3)}</p>
                             </li>
                         </ul>
                     </div>
                     <div className='col-large-3'>
                         <ul className='list'>
                             <li className='list__item'>
-                                <p>CSS/SCSS</p>
+                                <p>PHP</p>
                             </li>
                             <li className='list__item'>
-                                <p>CSS/SCSS</p>
+                                <p>Laravel</p>
                             </li>
                             <li className='list__item'>
-                                <p>CSS/SCSS</p>
+                                <p>Zend</p>
                             </li>
                             <li className='list__item'>
-                                <p>CSS/SCSS</p>
+                                <p>Codeigniter</p>
                             </li>
                             <li className='list__item'>
-                                <p>CSS/SCSS</p>
+                                <p>Codeigniter</p>
+                            </li>
+                            <li className='list__item'>
+                                <p>Codeigniter</p>
                             </li>
                         </ul>
                     </div>
@@ -90,6 +99,9 @@ export class SkillComponent extends React.Component {
                         <ul className='list'>
                             <li className='list__item'>
                                  <p className='text-salmon'>{this.dotSkill(4)}</p>
+                            </li>
+                            <li className='list__item'>
+                                <p className='text-salmon'>{this.dotSkill(4)}</p>
                             </li>
                             <li className='list__item'>
                                 <p className='text-salmon'>{this.dotSkill(4)}</p>
