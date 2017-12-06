@@ -78,27 +78,19 @@ module.exports = React;
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(0);
 var ReactDOM = __webpack_require__(2);
-var User_1 = __webpack_require__(3);
-var FooterComponent_1 = __webpack_require__(4);
-var HeaderComponent_1 = __webpack_require__(5);
-var MenuComponent_1 = __webpack_require__(6);
-var SkillComponent_1 = __webpack_require__(7);
+var MainComponent_1 = __webpack_require__(3);
 __webpack_require__(8);
-var Dashboard = /** @class */ (function () {
-    function Dashboard() {
-        this.user = new User_1.default('Mauro', 27);
+var App = /** @class */ (function () {
+    function App() {
         this.init();
     }
-    Dashboard.prototype.init = function () {
-        ReactDOM.render(React.createElement(HeaderComponent_1.HeaderComponent, null), document.getElementById('header'));
-        ReactDOM.render(React.createElement(MenuComponent_1.MenuComponent, null), document.getElementById('sidenav'));
-        ReactDOM.render(React.createElement(SkillComponent_1.SkillComponent, { name: this.user.name, age: this.user.age }), document.getElementById('profile'));
-        ReactDOM.render(React.createElement(FooterComponent_1.FooterComponent, null), document.getElementById('footer'));
+    App.prototype.init = function () {
+        ReactDOM.render(React.createElement(MainComponent_1.MainComponent, null), document.body);
     };
-    return Dashboard;
+    return App;
 }());
-exports.default = Dashboard;
-new Dashboard();
+exports.default = App;
+new App();
 
 
 /***/ }),
@@ -113,15 +105,35 @@ module.exports = ReactDOM;
 
 "use strict";
 
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 Object.defineProperty(exports, "__esModule", { value: true });
-var User = /** @class */ (function () {
-    function User(name, age) {
-        this.name = name;
-        this.age = age;
+var React = __webpack_require__(0);
+var FooterComponent_1 = __webpack_require__(4);
+var HeaderComponent_1 = __webpack_require__(5);
+var ProfileComponent_1 = __webpack_require__(6);
+var MainComponent = /** @class */ (function (_super) {
+    __extends(MainComponent, _super);
+    function MainComponent(props) {
+        return _super.call(this, props) || this;
     }
-    return User;
-}());
-exports.default = User;
+    MainComponent.prototype.render = function () {
+        return (React.createElement("main", { className: 'wrapper' },
+            React.createElement(HeaderComponent_1.HeaderComponent, null),
+            React.createElement(ProfileComponent_1.ProfileComponent, null),
+            React.createElement(FooterComponent_1.FooterComponent, null)));
+    };
+    return MainComponent;
+}(React.Component));
+exports.MainComponent = MainComponent;
 
 
 /***/ }),
@@ -148,7 +160,7 @@ var FooterComponent = /** @class */ (function (_super) {
         return _super.call(this, props) || this;
     }
     FooterComponent.prototype.render = function () {
-        return (React.createElement("div", { className: 'content' },
+        return (React.createElement("footer", { className: 'footer' },
             React.createElement("p", null, "Footer")));
     };
     return FooterComponent;
@@ -180,8 +192,18 @@ var HeaderComponent = /** @class */ (function (_super) {
         return _super.call(this, props) || this;
     }
     HeaderComponent.prototype.render = function () {
-        return (React.createElement("div", { className: 'content' },
-            React.createElement("p", null, "Header")));
+        return (React.createElement("header", { className: 'header navbar navbar--spacebetween bg-blue text-white' },
+            React.createElement("div", { className: 'navbar__brand' },
+                React.createElement("a", { href: '/', title: 'Resume' },
+                    React.createElement("span", { className: 'monospace uppercase thin text-white x-large' }, "Resume"))),
+            React.createElement("div", { className: 'navbar__menu' },
+                React.createElement("ul", { className: 'menu menu--horizontal menu--inherit' },
+                    React.createElement("li", { className: 'menu__item' },
+                        React.createElement("a", { className: 'menu__link uppercase', href: 'installation.html', title: 'My Resume' }, "My Resume")),
+                    React.createElement("li", { className: 'menu__item' },
+                        React.createElement("a", { className: 'menu__link uppercase', href: '', title: 'Profile' }, "Profile")),
+                    React.createElement("li", { className: 'menu__item' },
+                        React.createElement("a", { className: 'menu__link uppercase', href: 'https://github.com/maurovieirareis/resume', title: 'Github' }, "Github"))))));
     };
     return HeaderComponent;
 }(React.Component));
@@ -206,19 +228,29 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(0);
-var MenuComponent = /** @class */ (function (_super) {
-    __extends(MenuComponent, _super);
-    function MenuComponent(props) {
-        return _super.call(this, props) || this;
+var User_1 = __webpack_require__(7);
+var ProfileComponent = /** @class */ (function (_super) {
+    __extends(ProfileComponent, _super);
+    function ProfileComponent(props) {
+        var _this = _super.call(this, props) || this;
+        _this.user = new User_1.default('Mauro', 27);
+        return _this;
     }
-    MenuComponent.prototype.render = function () {
-        return (React.createElement("ul", { className: 'menu' },
-            React.createElement("li", { className: 'menu__item' },
-                React.createElement("a", { href: './index.html', className: 'menu__item__link' }, "Home"))));
+    ProfileComponent.prototype.render = function () {
+        return (React.createElement("div", { className: 'content' },
+            React.createElement("h2", null, "Profile"),
+            React.createElement("p", null,
+                React.createElement("strong", null, "Name:"),
+                " ",
+                this.user.name),
+            React.createElement("p", null,
+                React.createElement("strong", null, "Age:"),
+                " ",
+                this.user.age)));
     };
-    return MenuComponent;
+    return ProfileComponent;
 }(React.Component));
-exports.MenuComponent = MenuComponent;
+exports.ProfileComponent = ProfileComponent;
 
 
 /***/ }),
@@ -227,36 +259,15 @@ exports.MenuComponent = MenuComponent;
 
 "use strict";
 
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
 Object.defineProperty(exports, "__esModule", { value: true });
-var React = __webpack_require__(0);
-var SkillComponent = /** @class */ (function (_super) {
-    __extends(SkillComponent, _super);
-    function SkillComponent(props) {
-        return _super.call(this, props) || this;
+var User = /** @class */ (function () {
+    function User(name, age) {
+        this.name = name;
+        this.age = age;
     }
-    SkillComponent.prototype.render = function () {
-        return React.createElement("div", null,
-            React.createElement("h2", null, "Profile"),
-            React.createElement("div", null,
-                "Name: ",
-                this.props.name),
-            React.createElement("div", null,
-                "Age: ",
-                this.props.age));
-    };
-    return SkillComponent;
-}(React.Component));
-exports.SkillComponent = SkillComponent;
+    return User;
+}());
+exports.default = User;
 
 
 /***/ }),
@@ -267,4 +278,4 @@ exports.SkillComponent = SkillComponent;
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=resume.js.map
+//# sourceMappingURL=app.js.map

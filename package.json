@@ -2,11 +2,10 @@
   "name": "resume",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --env development",
-    "build": "webpack --env production"
+    "build": "webpack --env production",
+    "start": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
@@ -19,23 +18,23 @@
   },
   "homepage": "https://github.com/maurovieirareis/resume#readme",
   "dependencies": {
-    "@types/react": "^16.0.22",
+    "@types/react": "^16.0.27",
     "@types/react-dom": "^16.0.3",
     "css-loader": "^0.28.7",
-    "react": "^16.1.0",
-    "react-dom": "^16.1.0",
-    "stewed": "^0.9.^",
-    "style-loader": "^0.19.0"
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "stewed": "^0.9.54",
+    "style-loader": "^0.19.0",
+    "webpack-dev-server": "^2.9.5"
   },
   "devDependencies": {
-    "awesome-typescript-loader": "^3.3.0",
+    "awesome-typescript-loader": "^3.4.1",
     "extract-text-webpack-plugin": "^3.0.2",
     "http-server": "^0.10.0",
-    "node-sass": "^4.6.1",
+    "node-sass": "^4.7.2",
     "sass-loader": "^6.0.6",
     "source-map-loader": "^0.2.3",
-    "typescript": "^2.6.1",
-    "webpack": "^3.8.1",
-    "webpack-dev-server": "^2.9.4"
+    "typescript": "^2.6.2",
+    "webpack": "^3.10.0"
   }
 }
