@@ -23,9 +23,9 @@
     "css-loader": "^0.28.7",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "stewed": "^0.9.54",
+    "stewed": "^0.9.55",
     "style-loader": "^0.19.0",
-    "webpack-dev-server": "^2.9.5"
+    "webpack-dev-server": "^2.9.6"
   },
   "devDependencies": {
     "awesome-typescript-loader": "^3.4.1",

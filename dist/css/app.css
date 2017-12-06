@@ -3,17 +3,23 @@
 
 .aside {
   grid-area: aside;
-  width: 280px; }
+  width: 280px;
+  padding: 20px; }
 
 .main {
   flex-direction: column;
   min-height: 100vh;
   grid-area: main;
+  padding: 20px;
   background-color: #ddd; }
 
 .footer {
   background-color: #fff;
-  grid-area: footer; }
+  grid-area: footer;
+  padding: 20px; }
+
+* {
+  box-sizing: border-box; }
 
 body {
   width: 100%;

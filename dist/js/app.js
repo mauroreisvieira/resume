@@ -191,15 +191,15 @@ var HeaderComponent = /** @class */ (function (_super) {
         return (React.createElement("header", { className: 'header navbar navbar--spacebetween bg-blue text-white' },
             React.createElement("div", { className: 'navbar__brand' },
                 React.createElement("a", { href: '/', title: 'Resume' },
-                    React.createElement("span", { className: 'uppercase x-bold text-white x-large' }, "Resume"))),
+                    React.createElement("span", { className: 'uppercase semibold text-white large' }, "Resume"))),
             React.createElement("div", { className: 'navbar__menu' },
                 React.createElement("ul", { className: 'menu menu--horizontal menu--inherit' },
                     React.createElement("li", { className: 'menu__item' },
-                        React.createElement("a", { className: 'menu__link uppercase', href: 'installation.html', title: 'My Resume' }, "My Resume")),
+                        React.createElement("a", { className: 'menu__link', href: 'installation.html', title: 'My Resume' }, "Resumes")),
                     React.createElement("li", { className: 'menu__item' },
-                        React.createElement("a", { className: 'menu__link uppercase', href: '', title: 'Profile' }, "Profile")),
+                        React.createElement("a", { className: 'menu__link', href: '', title: 'Profile' }, "Profile")),
                     React.createElement("li", { className: 'menu__item' },
-                        React.createElement("a", { className: 'menu__link uppercase', href: 'https://github.com/maurovieirareis/resume', title: 'Github' }, "Github"))))));
+                        React.createElement("a", { className: 'menu__link', href: 'https://github.com/maurovieirareis/resume', title: 'Github' }, "Github"))))));
     };
     return HeaderComponent;
 }(React.Component));

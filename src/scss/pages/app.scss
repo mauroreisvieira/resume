@@ -4,6 +4,10 @@
 @import "../layout/main";
 @import "../layout/footer";
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   width: 100%;
   margin: 0;

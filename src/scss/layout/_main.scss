@@ -2,5 +2,6 @@
   flex-direction: column;
   min-height: 100vh;
   grid-area: main;
+  padding: $app-global-padding;
   background-color: #ddd;
 }
