@@ -10,15 +10,16 @@
 
 body {
   width: 100%;
+  height: 100vh;
   margin: 0;
   padding: 0;
   font-size: $app-font-size;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .wrapper {
   display: grid;
-  grid-template-columns: $app-asize-width calc(100% - #{$app-asize-width});
-  grid-template-areas: "header header" "aside main" "aside footer";
+  grid-template-columns: $app-aside-width calc(100% - #{$app-aside-width});
+  grid-template-areas: "header header" "aside main";
 }
 

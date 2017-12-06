@@ -1,7 +1,9 @@
 .main {
   flex-direction: column;
-  min-height: 100vh;
+  height: calc(100vh - #{$app-header-height});
   grid-area: main;
   padding: $app-global-padding;
   background-color: #ddd;
+  overflow: hidden;
+  overflow-y: auto;
 }

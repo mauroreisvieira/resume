@@ -1,17 +1,18 @@
 import * as React from 'react';
-import '../../scss/theme/employment.scss';
+import '../../scss/theme/skill.scss';
 
-export class EmploymentComponent extends React.Component {
+export class SkillComponent extends React.Component {
+
     constructor (props: any) {
         super(props);
     }
 
     public render(): any {
         return (
-            <div className='app-employment'>
+            <div className='app-skill'>
                 <div className='row'>
                     <div className='col-large-12'>
-                        <h5 className='x-bold'>Employment History</h5>
+                        <h5 className='x-bold'>Skills</h5>
                      </div>
                     <div className='col-large-4'>
                         <ul className='list'>

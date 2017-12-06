@@ -10,6 +10,9 @@ export class OptionsComponent extends React.Component  {
             <aside className='aside'>
                 <form action='' className='form'>
                     <div className='row'>
+                        <div className='col-large-12'>
+                        <h4>Personal Information</h4>
+                        </div>
                         <div className='form__field col-large-12'>
                             <label htmlFor='postionApplying' className='form__label'>
                                 Position you are applying for
@@ -44,7 +47,7 @@ export class OptionsComponent extends React.Component  {
                             <label htmlFor='fieldMessage' className='form__label'>
                                 Message
                             </label>
-                            <textarea id='fieldMessage' className='form__textarea' rows='6'>
+                            <textarea id='fieldMessage' className='form__textarea' rows={6}>
                                 I'm a Portuguese developer, fascinated by web development, who likes what they do. I love to learn, and share my knowledge, in order to enrich my portfolio. I'm an "Apple Fanboy", as well as a Sublime Text evangelist (I love this text editor for code).
                             </textarea>
                         </div>

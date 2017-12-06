@@ -1,9 +1,9 @@
 @import "config";
 
 .app {
-  &-profile {
+  &-skill {
     width: 100%;
-    padding: $app-global-padding;
     background-color: #fff;
+    padding: $app-global-padding;
   }
 }

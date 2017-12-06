@@ -1,9 +1,9 @@
 @import "config";
 
 .app {
-  &-profile {
+  &-education {
     width: 100%;
-    padding: $app-global-padding;
     background-color: #fff;
+    padding: $app-global-padding;
   }
 }

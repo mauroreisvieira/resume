@@ -1,19 +1,16 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-
-import { ResumeComponent } from './components/ResumeComponent';
-
+import { WrapperComponent } from './components/WrapperComponent';
 import '../scss/app.scss';
 
 export default class App {
-
     constructor () {
         this.init();
     }
 
     public init(): void {
         ReactDOM.render(
-            <ResumeComponent />,
+            <WrapperComponent />,
             document.body
         );
     }
