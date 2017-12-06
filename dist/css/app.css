@@ -1,7 +1,7 @@
 .app-education {
   width: 100%;
-  background-color: #fff;
-  padding: 12px; }
+  padding: 12px;
+  background-color: #fff; }
 .app-employment {
   width: 100%;
   background-color: #fff;
@@ -12,8 +12,8 @@
   background-color: #fff; }
 .app-skill {
   width: 100%;
-  background-color: #fff;
-  padding: 12px; }
+  padding: 12px;
+  background-color: #fff; }
 .header {
   grid-area: header; }
 

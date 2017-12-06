@@ -7,6 +7,21 @@ export class SkillComponent extends React.Component {
         super(props);
     }
 
+    public dotSkill(num: number): any {
+        const arrItem = [];
+        for (let i = 1; i < 6; ++i) {
+            if (i < num) {
+                arrItem.push('●');
+            } else {
+                arrItem.push('○');
+            }
+        }
+        const listItems = arrItem.map((v: any) =>
+            <span>{v}</span>
+        );
+        return listItems;
+    }
+
     public render(): any {
         return (
             <div className='app-skill'>
@@ -14,47 +29,79 @@ export class SkillComponent extends React.Component {
                     <div className='col-large-12'>
                         <h5 className='x-bold'>Skills</h5>
                      </div>
-                    <div className='col-large-4'>
+                    <div className='col-large-3'>
                         <ul className='list'>
-                            <li className='list__item my-20'>
-                                <div className='flex flex--column'>
-                                    <p>Apr 2013 - May 2016</p>
-                                    <p className='uppercase text-salmon'>Leiria</p>
-                                </div>
+                            <li className='list__item'>
+                                <p>CSS/SCSS</p>
                             </li>
-                            <li className='list__item my-20'>
-                                <div className='flex flex--column'>
-                                    <p>May 2016 - Oct 2017</p>
-                                    <p className='uppercase text-salmon'>Leiria</p>
-                                </div>
+                            <li className='list__item'>
+                                <p>CSS/SCSS</p>
                             </li>
-                            <li className='list__item my-20'>
-                                <div className='flex flex--column'>
-                                    <p>Oct 2017 - Present</p>
-                                    <p className='uppercase text-salmon'>Leiria</p>
-                                </div>
+                            <li className='list__item'>
+                                <p>CSS/SCSS</p>
+                            </li>
+                            <li className='list__item'>
+                                <p>CSS/SCSS</p>
+                            </li>
+                            <li className='list__item'>
+                                <p>CSS/SCSS</p>
                             </li>
                         </ul>
                     </div>
-                    <div className='col-large-8'>
+                    <div className='col-large-3'>
                         <ul className='list'>
-                            <li className='list__item my-20'>
-                                <div className='flex flex--column'>
-                                    <p>Web Developer</p>
-                                    <p className='uppercase text-salmon'>WayAcross</p>
-                                </div>
+                            <li className='list__item'>
+                                <p className='text-salmon'>{this.dotSkill(4)}</p>
                             </li>
-                            <li className='list__item my-20'>
-                                <div className='flex flex--column'>
-                                    <p>Senio Front end Developer</p>
-                                    <p className='uppercase text-salmon'>Hi INTERACTIVE</p>
-                                </div>
+                            <li className='list__item'>
+                                <p className='text-salmon'>{this.dotSkill(4)}</p>
                             </li>
-                            <li className='list__item my-20'>
-                                <div className='flex flex--column'>
-                                    <p>Senio Front end Developer</p>
-                                    <p className='uppercase text-salmon'>Namecheap</p>
-                                </div>
+                            <li className='list__item'>
+                                <p className='text-salmon'>{this.dotSkill(4)}</p>
+                            </li>
+                            <li className='list__item'>
+                                <p className='text-salmon'>{this.dotSkill(4)}</p>
+                            </li>
+                            <li className='list__item'>
+                                <p className='text-salmon'>{this.dotSkill(4)}</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className='col-large-3'>
+                        <ul className='list'>
+                            <li className='list__item'>
+                                <p>CSS/SCSS</p>
+                            </li>
+                            <li className='list__item'>
+                                <p>CSS/SCSS</p>
+                            </li>
+                            <li className='list__item'>
+                                <p>CSS/SCSS</p>
+                            </li>
+                            <li className='list__item'>
+                                <p>CSS/SCSS</p>
+                            </li>
+                            <li className='list__item'>
+                                <p>CSS/SCSS</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className='col-large-3'>
+                        <ul className='list'>
+                            <li className='list__item'>
+                                 <p className='text-salmon'>{this.dotSkill(4)}</p>
+                            </li>
+                            <li className='list__item'>
+                                <p className='text-salmon'>{this.dotSkill(4)}</p>
+                            </li>
+                            <li className='list__item'>
+                                <p className='text-salmon'>{this.dotSkill(4)}</p>
+                            </li>
+                            <li className='list__item'>
+                                <p className='text-salmon'>{this.dotSkill(4)}</p>
+                            </li>
+                            <li className='list__item'>
+                                <p className='text-salmon'>{this.dotSkill(4)}</p>
                             </li>
                         </ul>
                     </div>
