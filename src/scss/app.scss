@@ -12,13 +12,13 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  font-size: 16px;
+  font-size: $app-font-size;
   overflow-x: hidden;
 }
 
 .wrapper {
   display: grid;
-  grid-template-columns: 280px calc(100% - 280px);
+  grid-template-columns: $app-asize-width calc(100% - #{$app-asize-width});
   grid-template-areas: "header header" "aside main" "aside footer";
 }
 
