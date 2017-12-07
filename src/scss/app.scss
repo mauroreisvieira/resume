@@ -1,5 +1,6 @@
 @import "utilities/variables";
 @import "layout/header";
+@import "layout/sidebar";
 @import "layout/aside";
 @import "layout/main";
 @import "layout/footer";
@@ -19,7 +20,7 @@ body {
 
 .wrapper {
   display: grid;
-  grid-template-columns: $app-aside-width calc(100% - #{$app-aside-width});
-  grid-template-areas: "header header" "aside main";
+  grid-template-columns: $app-sidebar-width $app-aside-width calc(100% - #{$app-sidebar-width + $app-aside-width});
+  grid-template-areas: "sidebar header header" "sidebar aside main";
 }
 

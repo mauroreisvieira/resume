@@ -1,0 +1,17 @@
+.sidebar {
+  grid-area: sidebar;
+  width: $app-sidebar-width;
+
+  .menu {
+    margin-top: $app-header-height;
+
+    &__item {
+      display: flex;
+      width: 100%;
+      height: $app-header-height;
+      align-items: center;
+      justify-content: center;
+      background-color: red;
+    }
+  }
+}

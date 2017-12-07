@@ -454,6 +454,7 @@ var React = __webpack_require__(0);
 var HeaderComponent_1 = __webpack_require__(5);
 var OptionsComponent_1 = __webpack_require__(13);
 var MainComponent_1 = __webpack_require__(3);
+var SideBarComponent_1 = __webpack_require__(29);
 var WrapperComponent = /** @class */ (function (_super) {
     __extends(WrapperComponent, _super);
     function WrapperComponent(props) {
@@ -462,6 +463,7 @@ var WrapperComponent = /** @class */ (function (_super) {
     WrapperComponent.prototype.render = function () {
         return (React.createElement("div", { className: 'wrapper' },
             React.createElement(HeaderComponent_1.HeaderComponent, null),
+            React.createElement(SideBarComponent_1.SideBarComponent, null),
             React.createElement(OptionsComponent_1.OptionsComponent, null),
             React.createElement(MainComponent_1.MainComponent, null)));
     };
@@ -588,6 +590,45 @@ exports.SkillComponent = SkillComponent;
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 28 */,
+/* 29 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+Object.defineProperty(exports, "__esModule", { value: true });
+var React = __webpack_require__(0);
+var SideBarComponent = /** @class */ (function (_super) {
+    __extends(SideBarComponent, _super);
+    function SideBarComponent(props) {
+        return _super.call(this, props) || this;
+    }
+    SideBarComponent.prototype.render = function () {
+        return (React.createElement("nav", { className: 'sidebar bg-blue--darken' },
+            React.createElement("ul", { className: 'menu menu--inherit' },
+                React.createElement("li", { className: 'menu__item' },
+                    React.createElement("a", { className: 'menu__link', href: 'installation.html', title: 'My Resume' }, "Resumes")),
+                React.createElement("li", { className: 'menu__item' },
+                    React.createElement("a", { className: 'menu__link', href: '', title: 'Profile' }, "Profile")),
+                React.createElement("li", { className: 'menu__item' },
+                    React.createElement("a", { className: 'menu__link', href: 'https://github.com/maurovieirareis/resume', title: 'Github' }, "Github")))));
+    };
+    return SideBarComponent;
+}(React.Component));
+exports.SideBarComponent = SideBarComponent;
+
 
 /***/ })
 /******/ ]);
