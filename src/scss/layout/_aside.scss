@@ -1,6 +1,7 @@
 .aside {
   grid-area: aside;
-  width: $app-aside-width;
-  height: calc(100vh - #{$app-header-height});
-  padding: $app-global-padding;
+  width: var(--aside-w);
+  height: calc(100vh - var(--header-h));
+  padding: calc(var(--padding-base) * 2);
+  background-color: var(--color-grey-light);
 }

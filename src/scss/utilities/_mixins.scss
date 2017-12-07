@@ -1,0 +1,7 @@
+@function pxtoem($fontSize) {
+  @return units($fontSize) * 1 / units($app-body-font-size) * 1em;
+}
+
+@function units($number) {
+  @return $number / ($number * 0 + 1);
+}

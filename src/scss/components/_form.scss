@@ -1,0 +1,20 @@
+.form {
+  &__label {
+    font-weight: $app-font-semibold;
+    font-size: pxtoem($app-font-size-xs);
+  }
+
+  &__input {
+    border: 1px solid #eef0f3;
+    border-radius: 4px;
+    background-color: #f9fafc;
+    font-size: pxtoem($app-font-size-sm);
+  }
+
+  &__textarea {
+    border: 1px solid #eef0f3;
+    border-radius: 4px;
+    background-color: #f9fafc;
+    font-size: pxtoem($app-font-size-sm);
+  }
+}

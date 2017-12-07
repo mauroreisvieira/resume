@@ -1,8 +1,17 @@
 import * as React from 'react';
 
 export class OptionsComponent extends React.Component  {
+    public state: any;
+
     constructor (props: any) {
         super(props);
+    }
+
+    public handleKeyPress(event: any): void {
+        console.log(event.target.value);
+        if (event.key === 'Enter') {
+            console.log('enter press here!');
+        }
     }
 
     public render(): any {
@@ -17,31 +26,47 @@ export class OptionsComponent extends React.Component  {
                             <label htmlFor='postionApplying' className='form__label'>
                                 Position you are applying for
                             </label>
-                            <input id='postionApplying' type='text' value='Senio Front end Developer' className='form__input form__label--large' />
+                            <input id='postionApplying'
+                                type='text'
+                                defaultValue='Senio Front end Developer'
+                                onKeyUp={this.handleKeyPress}
+                                className='form__input form__label--large' />
                         </div>
                         <div className='form__field col-large-6'>
                             <label htmlFor='firstName' className='form__label'>
                                 First Name
                             </label>
-                            <input id='firstName' type='text' value='Mauro' placeholder='' className='form__input form__label--large' />
+                            <input id='firstName' type='text' defaultValue='Mauro' placeholder='' className='form__input form__label--large' />
                         </div>
                          <div className='form__field col-large-6'>
                             <label htmlFor='lastName' className='form__label'>
                                 Last Name
                             </label>
-                            <input id='lastName' type='text' value='Reis Vieira' placeholder='' className='form__input form__label--large' />
+                            <input id='lastName' type='text' defaultValue='Reis Vieira' placeholder='' className='form__input form__label--large' />
                         </div>
                         <div className='form__field col-large-6'>
                             <label htmlFor='phoneNumber' className='form__label'>
                                 Phone Number
                             </label>
-                            <input id='phoneNumber' type='text' value='917771054' placeholder='' className='form__input form__label--large' />
+                            <input id='phoneNumber' type='text' defaultValue='917771054' placeholder='' className='form__input form__label--large' />
                         </div>
                         <div className='form__field col-large-6'>
                             <label htmlFor='fieldEmail' className='form__label'>
                                 Email
                             </label>
-                            <input id='fieldEmail' type='email' value='mauroreisvieira@gmail.com' placeholder='' className='form__input form__label--large' />
+                            <input id='fieldEmail' type='text' defaultValue='mauroreisvieira@gmail.com' placeholder='' className='form__input form__label--large' />
+                        </div>
+                        <div className='form__field col-large-6'>
+                            <label htmlFor='fieldBirth' className='form__label'>
+                                Place of birth
+                            </label>
+                            <input id='fieldBirth' type='text' defaultValue='' placeholder='' className='form__input form__label--large' />
+                        </div>
+                        <div className='form__field col-large-6'>
+                            <label htmlFor='fieldDateBirth' className='form__label'>
+                                Date of birth
+                            </label>
+                            <input id='fieldDateBirth' type='text' defaultValue='' placeholder='' className='form__input form__label--large' />
                         </div>
                         <div className='form__field col-large-12'>
                             <label htmlFor='fieldMessage' className='form__label'>

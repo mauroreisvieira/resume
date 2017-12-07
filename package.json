@@ -3,14 +3,20 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --env production",
-    "start": "webpack-dev-server"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/maurovieirareis/resume.git"
   },
+  "keywords": [
+    "typescript",
+    "react",
+    "reactjs",
+    "mobx",
+    "stewed",
+    "resume"
+  ],
   "author": "Mauro Reis Vieira <mauroreisvieira@gmail.com>",
   "license": "MIT",
   "bugs": {
@@ -18,14 +24,17 @@
   },
   "homepage": "https://github.com/maurovieirareis/resume#readme",
   "dependencies": {
-    "@types/react": "^16.0.27",
+    "@types/react": "^16.0.28",
     "@types/react-dom": "^16.0.3",
     "css-loader": "^0.28.7",
+    "mobx": "^3.4.1",
+    "mobx-react": "^4.2.2",
+    "mobx-react-devtools": "^4.2.15",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "stewed": "^0.9.55",
     "style-loader": "^0.19.0",
-    "webpack-dev-server": "^2.9.6"
+    "webpack-dev-server": "^2.9.7"
   },
   "devDependencies": {
     "awesome-typescript-loader": "^3.4.1",

@@ -1,4 +1,19 @@
 .header {
   grid-area: header;
-  height: $app-header-height;
+  height: var(--header-h);
+  background-color: $app-color-white;
+  box-shadow: rgba($app-color-primary, .07) 0 10px 60px;
+  z-index: 91;
+
+  .navbar {
+    &__brand {
+      color: $app-color-blue;
+    }
+  }
+
+  .menu {
+    &__link {
+      color: $app-color-primary;
+    }
+  }
 }

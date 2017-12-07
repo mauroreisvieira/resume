@@ -2,8 +2,12 @@ import * as React from 'react';
 import { FooterComponent } from './layout/FooterComponent';
 import { HeaderComponent } from './layout/HeaderComponent';
 import { OptionsComponent } from './layout/OptionsComponent';
-import { MainComponent } from './MainComponent';
 import { SideBarComponent } from './layout/SideBarComponent';
+
+import { EducationComponent } from './EducationComponent';
+import { EmploymentComponent } from './EmploymentComponent';
+import { ProfileComponent } from './ProfileComponent';
+import { SkillComponent } from './SkillComponent';
 
 export class WrapperComponent extends React.Component {
     constructor (props: any) {
@@ -16,7 +20,12 @@ export class WrapperComponent extends React.Component {
                 <HeaderComponent />
                 <SideBarComponent />
                 <OptionsComponent />
-                <MainComponent />
+                <main className='main'>
+                    <ProfileComponent />
+                    <EmploymentComponent />
+                    <EducationComponent />
+                    <SkillComponent />
+                </main>
             </div>
         );
     }

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { WrapperComponent } from './components/WrapperComponent';
+import { WrapperComponent } from './app/WrapperComponent';
 import '../scss/app.scss';
 
 export default class App {
@@ -11,8 +11,9 @@ export default class App {
     public init(): void {
         ReactDOM.render(
             <WrapperComponent />,
-            document.body
+            document.getElementById('app')
         );
     }
 }
+
 new App();

@@ -1,17 +1,26 @@
 .sidebar {
   grid-area: sidebar;
-  width: $app-sidebar-width;
+  width: var(--sidebar-w);
+  background-color: var(--color-base);
 
   .menu {
-    margin-top: $app-header-height;
+    margin-top: var(--header-h);
 
     &__item {
-      display: flex;
       width: 100%;
-      height: $app-header-height;
-      align-items: center;
-      justify-content: center;
-      background-color: red;
+      text-align: center;
+    }
+
+    &__link {
+      padding: 1em 0;
+      color: var(--color-white);
+      font-size: $app-sidebar-icon-size;
+
+      &:hover,
+      &.is-active {
+        background-color: rgba($app-color-white, .4);
+        opacity: 1;
+      }
     }
   }
 }

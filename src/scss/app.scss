@@ -1,9 +1,25 @@
 @import "utilities/variables";
-@import "layout/header";
-@import "layout/sidebar";
-@import "layout/aside";
-@import "layout/main";
-@import "layout/footer";
+@import "utilities/mixins";
+
+:root {
+  // colors
+  --color-base: $app-color-base;
+  --color-white: $app-color-white;
+  --color-grey-light: $app-color-grey-light;
+
+  // padding
+  --padding-base: $app-global-padding;
+  // body
+  --body-bg-color: $app-color-white;
+  --body-fs: $app-body-font-size;
+
+  // header
+  --header-h: $app-header-height;
+
+  // wrapper
+  --sidebar-w: $app-sidebar-width;
+  --aside-w: $app-aside-width;
+}
 
 * {
   box-sizing: border-box;
@@ -14,13 +30,21 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
-  font-size: $app-font-size;
+  background-color: var(--body-bg-color);
+  font-size: var(--body-fs);
+  text-rendering: optimizeLegibility;
   overflow: hidden;
 }
 
 .wrapper {
   display: grid;
-  grid-template-columns: $app-sidebar-width $app-aside-width calc(100% - #{$app-sidebar-width + $app-aside-width});
+  grid-template-columns: var(--sidebar-w) var(--aside-w) calc(100% - (var(--sidebar-w) + var(--aside-w)));
   grid-template-areas: "sidebar header header" "sidebar aside main";
 }
 
+@import "layout/header";
+@import "layout/sidebar";
+@import "layout/aside";
+@import "layout/main";
+@import "components/button";
+@import "components/form";

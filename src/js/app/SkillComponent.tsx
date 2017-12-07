@@ -16,8 +16,8 @@ export class SkillComponent extends React.Component {
                 arrItem.push('○');
             }
         }
-        const listItems = arrItem.map((v: any) =>
-            <span>{v}</span>
+        const listItems = arrItem.map((v: any, index: number) =>
+            <span key={index}>{v}</span>,
         );
         return listItems;
     }

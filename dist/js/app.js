@@ -78,14 +78,14 @@ module.exports = React;
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(0);
 var ReactDOM = __webpack_require__(2);
-var WrapperComponent_1 = __webpack_require__(23);
-__webpack_require__(20);
+var WrapperComponent_1 = __webpack_require__(25);
+__webpack_require__(16);
 var App = /** @class */ (function () {
     function App() {
         this.init();
     }
     App.prototype.init = function () {
-        ReactDOM.render(React.createElement(WrapperComponent_1.WrapperComponent, null), document.body);
+        ReactDOM.render(React.createElement(WrapperComponent_1.WrapperComponent, null), document.getElementById('app'));
     };
     return App;
 }());
@@ -100,129 +100,26 @@ new App();
 module.exports = ReactDOM;
 
 /***/ }),
-/* 3 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-Object.defineProperty(exports, "__esModule", { value: true });
-var React = __webpack_require__(0);
-var EducationComponent_1 = __webpack_require__(22);
-var EmploymentComponent_1 = __webpack_require__(15);
-var ProfileComponent_1 = __webpack_require__(6);
-var SkillComponent_1 = __webpack_require__(26);
-var MainComponent = /** @class */ (function (_super) {
-    __extends(MainComponent, _super);
-    function MainComponent(props) {
-        return _super.call(this, props) || this;
-    }
-    MainComponent.prototype.render = function () {
-        return (React.createElement("main", { className: 'main' },
-            React.createElement(ProfileComponent_1.ProfileComponent, null),
-            React.createElement(EmploymentComponent_1.EmploymentComponent, null),
-            React.createElement(EducationComponent_1.EducationComponent, null),
-            React.createElement(SkillComponent_1.SkillComponent, null)));
-    };
-    return MainComponent;
-}(React.Component));
-exports.MainComponent = MainComponent;
-
-
-/***/ }),
+/* 3 */,
 /* 4 */,
-/* 5 */
-/***/ (function(module, exports, __webpack_require__) {
+/* 5 */,
+/* 6 */,
+/* 7 */,
+/* 8 */
+/***/ (function(module, exports) {
 
-"use strict";
-
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-Object.defineProperty(exports, "__esModule", { value: true });
-var React = __webpack_require__(0);
-var HeaderComponent = /** @class */ (function (_super) {
-    __extends(HeaderComponent, _super);
-    function HeaderComponent(props) {
-        return _super.call(this, props) || this;
-    }
-    HeaderComponent.prototype.render = function () {
-        return (React.createElement("header", { className: 'header navbar navbar--spacebetween bg-blue text-white' },
-            React.createElement("div", { className: 'navbar__brand' },
-                React.createElement("a", { href: '/', title: 'Resume' },
-                    React.createElement("span", { className: 'uppercase semibold text-white large' }, "Resume"))),
-            React.createElement("div", { className: 'navbar__menu' },
-                React.createElement("ul", { className: 'menu menu--horizontal menu--inherit' },
-                    React.createElement("li", { className: 'menu__item' },
-                        React.createElement("a", { className: 'menu__link', href: 'installation.html', title: 'My Resume' }, "Resumes")),
-                    React.createElement("li", { className: 'menu__item' },
-                        React.createElement("a", { className: 'menu__link', href: '', title: 'Profile' }, "Profile")),
-                    React.createElement("li", { className: 'menu__item' },
-                        React.createElement("a", { className: 'menu__link', href: 'https://github.com/maurovieirareis/resume', title: 'Github' }, "Github"))))));
-    };
-    return HeaderComponent;
-}(React.Component));
-exports.HeaderComponent = HeaderComponent;
-
+// removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 6 */
-/***/ (function(module, exports, __webpack_require__) {
+/* 9 */,
+/* 10 */
+/***/ (function(module, exports) {
 
-"use strict";
-
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-Object.defineProperty(exports, "__esModule", { value: true });
-var React = __webpack_require__(0);
-var User_1 = __webpack_require__(7);
-__webpack_require__(16);
-var ProfileComponent = /** @class */ (function (_super) {
-    __extends(ProfileComponent, _super);
-    function ProfileComponent(props) {
-        var _this = _super.call(this, props) || this;
-        _this.user = new User_1.default('Mauro', 27);
-        return _this;
-    }
-    ProfileComponent.prototype.render = function () {
-        return (React.createElement("div", { className: 'app-profile' },
-            React.createElement("div", { className: 'row' },
-                React.createElement("div", { className: 'col-large-4' },
-                    React.createElement("h5", { className: 'x-bold' }, "Profile")),
-                React.createElement("div", { className: 'col-large-8' },
-                    React.createElement("p", null, "I'm a Portuguese developer, fascinated by web development, who likes what they do. I love to learn, and share my knowledge, in order to enrich my portfolio. I'm an \"Apple Fanboy\", as well as a Sublime Text evangelist (I love this text editor for code).")))));
-    };
-    return ProfileComponent;
-}(React.Component));
-exports.ProfileComponent = ProfileComponent;
-
+// removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 7 */
+/* 11 */,
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -239,68 +136,34 @@ exports.default = User;
 
 
 /***/ }),
-/* 8 */,
-/* 9 */,
-/* 10 */,
-/* 11 */,
-/* 12 */,
 /* 13 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-Object.defineProperty(exports, "__esModule", { value: true });
-var React = __webpack_require__(0);
-var OptionsComponent = /** @class */ (function (_super) {
-    __extends(OptionsComponent, _super);
-    function OptionsComponent(props) {
-        return _super.call(this, props) || this;
-    }
-    OptionsComponent.prototype.render = function () {
-        return (React.createElement("aside", { className: 'aside' },
-            React.createElement("form", { action: '', className: 'form' },
-                React.createElement("div", { className: 'row' },
-                    React.createElement("div", { className: 'col-large-12' },
-                        React.createElement("h4", null, "Personal Information")),
-                    React.createElement("div", { className: 'form__field col-large-12' },
-                        React.createElement("label", { htmlFor: 'postionApplying', className: 'form__label' }, "Position you are applying for"),
-                        React.createElement("input", { id: 'postionApplying', type: 'text', value: 'Senio Front end Developer', className: 'form__input form__label--large' })),
-                    React.createElement("div", { className: 'form__field col-large-6' },
-                        React.createElement("label", { htmlFor: 'firstName', className: 'form__label' }, "First Name"),
-                        React.createElement("input", { id: 'firstName', type: 'text', value: 'Mauro', placeholder: '', className: 'form__input form__label--large' })),
-                    React.createElement("div", { className: 'form__field col-large-6' },
-                        React.createElement("label", { htmlFor: 'lastName', className: 'form__label' }, "Last Name"),
-                        React.createElement("input", { id: 'lastName', type: 'text', value: 'Reis Vieira', placeholder: '', className: 'form__input form__label--large' })),
-                    React.createElement("div", { className: 'form__field col-large-6' },
-                        React.createElement("label", { htmlFor: 'phoneNumber', className: 'form__label' }, "Phone Number"),
-                        React.createElement("input", { id: 'phoneNumber', type: 'text', value: '917771054', placeholder: '', className: 'form__input form__label--large' })),
-                    React.createElement("div", { className: 'form__field col-large-6' },
-                        React.createElement("label", { htmlFor: 'fieldEmail', className: 'form__label' }, "Email"),
-                        React.createElement("input", { id: 'fieldEmail', type: 'email', value: 'mauroreisvieira@gmail.com', placeholder: '', className: 'form__input form__label--large' })),
-                    React.createElement("div", { className: 'form__field col-large-12' },
-                        React.createElement("label", { htmlFor: 'fieldMessage', className: 'form__label' }, "Message"),
-                        React.createElement("textarea", { id: 'fieldMessage', className: 'form__textarea', rows: 6 }, "I'm a Portuguese developer, fascinated by web development, who likes what they do. I love to learn, and share my knowledge, in order to enrich my portfolio. I'm an \"Apple Fanboy\", as well as a Sublime Text evangelist (I love this text editor for code).")),
-                    React.createElement("div", { className: 'form__actions col-large-6' },
-                        React.createElement("button", { className: 'button button--large button--success' }, "Save Changes"))))));
-    };
-    return OptionsComponent;
-}(React.Component));
-exports.OptionsComponent = OptionsComponent;
-
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 /* 14 */,
 /* 15 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 16 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 17 */,
+/* 18 */,
+/* 19 */,
+/* 20 */,
+/* 21 */,
+/* 22 */,
+/* 23 */,
+/* 24 */,
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -317,7 +180,107 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(0);
-__webpack_require__(18);
+var HeaderComponent_1 = __webpack_require__(30);
+var OptionsComponent_1 = __webpack_require__(31);
+var SideBarComponent_1 = __webpack_require__(32);
+var EducationComponent_1 = __webpack_require__(26);
+var EmploymentComponent_1 = __webpack_require__(27);
+var ProfileComponent_1 = __webpack_require__(28);
+var SkillComponent_1 = __webpack_require__(29);
+var WrapperComponent = /** @class */ (function (_super) {
+    __extends(WrapperComponent, _super);
+    function WrapperComponent(props) {
+        return _super.call(this, props) || this;
+    }
+    WrapperComponent.prototype.render = function () {
+        return (React.createElement("div", { className: 'wrapper' },
+            React.createElement(HeaderComponent_1.HeaderComponent, null),
+            React.createElement(SideBarComponent_1.SideBarComponent, null),
+            React.createElement(OptionsComponent_1.OptionsComponent, null),
+            React.createElement("main", { className: 'main' },
+                React.createElement(ProfileComponent_1.ProfileComponent, null),
+                React.createElement(EmploymentComponent_1.EmploymentComponent, null),
+                React.createElement(EducationComponent_1.EducationComponent, null),
+                React.createElement(SkillComponent_1.SkillComponent, null))));
+    };
+    return WrapperComponent;
+}(React.Component));
+exports.WrapperComponent = WrapperComponent;
+
+
+/***/ }),
+/* 26 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+Object.defineProperty(exports, "__esModule", { value: true });
+var React = __webpack_require__(0);
+__webpack_require__(8);
+var EducationComponent = /** @class */ (function (_super) {
+    __extends(EducationComponent, _super);
+    function EducationComponent(props) {
+        return _super.call(this, props) || this;
+    }
+    EducationComponent.prototype.render = function () {
+        return (React.createElement("div", { className: 'app-education' },
+            React.createElement("div", { className: 'row' },
+                React.createElement("div", { className: 'col-large-12' },
+                    React.createElement("h5", { className: 'x-bold' }, "Education")),
+                React.createElement("div", { className: 'col-large-12 my-20' },
+                    React.createElement("div", { className: 'flex flex--row flex--content-between' },
+                        React.createElement("div", { className: 'flex flex--column vw-2' },
+                            React.createElement("p", null, "Nov 2011 - Jul 2013"),
+                            React.createElement("p", { className: 'uppercase text-salmon' }, "Leiria")),
+                        React.createElement("div", { className: 'flex flex--column col-large' },
+                            React.createElement("p", null, "Intituto Polit\u00E9cnico de Leiria"),
+                            React.createElement("p", { className: 'text-grey mb-20' }, "CET"),
+                            React.createElement("p", null, "Multimedia Technologies"),
+                            React.createElement("p", null, "Data Base"),
+                            React.createElement("p", null, "Development of Web Applications I and II")))),
+                React.createElement("div", { className: 'col-large-12 my-20' },
+                    React.createElement("div", { className: 'flex flex--row flex--content-between' },
+                        React.createElement("div", { className: 'flex flex--column vw-2' },
+                            React.createElement("p", null, "Sep 2013 - Present"),
+                            React.createElement("p", { className: 'uppercase text-salmon' }, "Leiria")),
+                        React.createElement("div", { className: 'flex flex--column col-large' },
+                            React.createElement("p", null, "Intituto Polit\u00E9cnico de Leiria"),
+                            React.createElement("p", { className: 'text-salmon' }, "Computer Engineering")))))));
+    };
+    return EducationComponent;
+}(React.Component));
+exports.EducationComponent = EducationComponent;
+
+
+/***/ }),
+/* 27 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+Object.defineProperty(exports, "__esModule", { value: true });
+var React = __webpack_require__(0);
+__webpack_require__(10);
 var EmploymentComponent = /** @class */ (function (_super) {
     __extends(EmploymentComponent, _super);
     function EmploymentComponent(props) {
@@ -359,28 +322,7 @@ exports.EmploymentComponent = EmploymentComponent;
 
 
 /***/ }),
-/* 16 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 17 */,
-/* 18 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 19 */,
-/* 20 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 21 */,
-/* 22 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -397,44 +339,30 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(0);
-__webpack_require__(24);
-var EducationComponent = /** @class */ (function (_super) {
-    __extends(EducationComponent, _super);
-    function EducationComponent(props) {
-        return _super.call(this, props) || this;
+var User_1 = __webpack_require__(12);
+__webpack_require__(13);
+var ProfileComponent = /** @class */ (function (_super) {
+    __extends(ProfileComponent, _super);
+    function ProfileComponent(props) {
+        var _this = _super.call(this, props) || this;
+        _this.user = new User_1.default('Mauro Reis Vieir', 27);
+        return _this;
     }
-    EducationComponent.prototype.render = function () {
-        return (React.createElement("div", { className: 'app-education' },
+    ProfileComponent.prototype.render = function () {
+        return (React.createElement("div", { className: 'app-profile' },
             React.createElement("div", { className: 'row' },
-                React.createElement("div", { className: 'col-large-12' },
-                    React.createElement("h5", { className: 'x-bold' }, "Education")),
-                React.createElement("div", { className: 'col-large-12 my-20' },
-                    React.createElement("div", { className: 'flex flex--row flex--content-between' },
-                        React.createElement("div", { className: 'flex flex--column vw-2' },
-                            React.createElement("p", null, "Nov 2011 - Jul 2013"),
-                            React.createElement("p", { className: 'uppercase text-salmon' }, "Leiria")),
-                        React.createElement("div", { className: 'flex flex--column col-large' },
-                            React.createElement("p", null, "Intituto Polit\u00E9cnico de Leiria"),
-                            React.createElement("p", { className: 'text-grey mb-20' }, "CET"),
-                            React.createElement("p", null, "Multimedia Technologies"),
-                            React.createElement("p", null, "Data Base"),
-                            React.createElement("p", null, "Development of Web Applications I and II")))),
-                React.createElement("div", { className: 'col-large-12 my-20' },
-                    React.createElement("div", { className: 'flex flex--row flex--content-between' },
-                        React.createElement("div", { className: 'flex flex--column vw-2' },
-                            React.createElement("p", null, "Sep 2013 - Present"),
-                            React.createElement("p", { className: 'uppercase text-salmon' }, "Leiria")),
-                        React.createElement("div", { className: 'flex flex--column col-large' },
-                            React.createElement("p", null, "Intituto Polit\u00E9cnico de Leiria"),
-                            React.createElement("p", { className: 'text-salmon' }, "Computer Engineering")))))));
+                React.createElement("div", { className: 'col-large-4' },
+                    React.createElement("h5", { className: 'x-bold' }, "Profile")),
+                React.createElement("div", { className: 'col-large-8' },
+                    React.createElement("p", null, "I'm a Portuguese developer, fascinated by web development, who likes what they do. I love to learn, and share my knowledge, in order to enrich my portfolio. I'm an \"Apple Fanboy\", as well as a Sublime Text evangelist (I love this text editor for code).")))));
     };
-    return EducationComponent;
+    return ProfileComponent;
 }(React.Component));
-exports.EducationComponent = EducationComponent;
+exports.ProfileComponent = ProfileComponent;
 
 
 /***/ }),
-/* 23 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -451,53 +379,7 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(0);
-var HeaderComponent_1 = __webpack_require__(5);
-var OptionsComponent_1 = __webpack_require__(13);
-var MainComponent_1 = __webpack_require__(3);
-var SideBarComponent_1 = __webpack_require__(29);
-var WrapperComponent = /** @class */ (function (_super) {
-    __extends(WrapperComponent, _super);
-    function WrapperComponent(props) {
-        return _super.call(this, props) || this;
-    }
-    WrapperComponent.prototype.render = function () {
-        return (React.createElement("div", { className: 'wrapper' },
-            React.createElement(HeaderComponent_1.HeaderComponent, null),
-            React.createElement(SideBarComponent_1.SideBarComponent, null),
-            React.createElement(OptionsComponent_1.OptionsComponent, null),
-            React.createElement(MainComponent_1.MainComponent, null)));
-    };
-    return WrapperComponent;
-}(React.Component));
-exports.WrapperComponent = WrapperComponent;
-
-
-/***/ }),
-/* 24 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 25 */,
-/* 26 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-Object.defineProperty(exports, "__esModule", { value: true });
-var React = __webpack_require__(0);
-__webpack_require__(27);
+__webpack_require__(15);
 var SkillComponent = /** @class */ (function (_super) {
     __extends(SkillComponent, _super);
     function SkillComponent(props) {
@@ -513,8 +395,8 @@ var SkillComponent = /** @class */ (function (_super) {
                 arrItem.push('○');
             }
         }
-        var listItems = arrItem.map(function (v) {
-            return React.createElement("span", null, v);
+        var listItems = arrItem.map(function (v, index) {
+            return React.createElement("span", { key: index }, v);
         });
         return listItems;
     };
@@ -586,14 +468,111 @@ exports.SkillComponent = SkillComponent;
 
 
 /***/ }),
-/* 27 */
-/***/ (function(module, exports) {
+/* 30 */
+/***/ (function(module, exports, __webpack_require__) {
 
-// removed by extract-text-webpack-plugin
+"use strict";
+
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+Object.defineProperty(exports, "__esModule", { value: true });
+var React = __webpack_require__(0);
+var HeaderComponent = /** @class */ (function (_super) {
+    __extends(HeaderComponent, _super);
+    function HeaderComponent(props) {
+        return _super.call(this, props) || this;
+    }
+    HeaderComponent.prototype.render = function () {
+        return (React.createElement("header", { className: 'header navbar navbar--spacebetween' },
+            React.createElement("div", { className: 'navbar__brand' },
+                React.createElement("span", { className: 'uppercase semibold large' }, "Resume App")),
+            React.createElement("div", { className: 'navbar__menu' },
+                React.createElement("button", { className: 'button button--small button--default' },
+                    React.createElement("i", { className: 'icon ion-android-download mr-10 medium' }),
+                    "Export Resume"))));
+    };
+    return HeaderComponent;
+}(React.Component));
+exports.HeaderComponent = HeaderComponent;
+
 
 /***/ }),
-/* 28 */,
-/* 29 */
+/* 31 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+Object.defineProperty(exports, "__esModule", { value: true });
+var React = __webpack_require__(0);
+var OptionsComponent = /** @class */ (function (_super) {
+    __extends(OptionsComponent, _super);
+    function OptionsComponent(props) {
+        return _super.call(this, props) || this;
+    }
+    OptionsComponent.prototype.handleKeyPress = function (event) {
+        console.log(event.target.value);
+        if (event.key === 'Enter') {
+            console.log('enter press here!');
+        }
+    };
+    OptionsComponent.prototype.render = function () {
+        return (React.createElement("aside", { className: 'aside' },
+            React.createElement("form", { action: '', className: 'form' },
+                React.createElement("div", { className: 'row' },
+                    React.createElement("div", { className: 'col-large-12' },
+                        React.createElement("h4", null, "Personal Information")),
+                    React.createElement("div", { className: 'form__field col-large-12' },
+                        React.createElement("label", { htmlFor: 'postionApplying', className: 'form__label' }, "Position you are applying for"),
+                        React.createElement("input", { id: 'postionApplying', type: 'text', defaultValue: 'Senio Front end Developer', onKeyUp: this.handleKeyPress, className: 'form__input form__label--large' })),
+                    React.createElement("div", { className: 'form__field col-large-6' },
+                        React.createElement("label", { htmlFor: 'firstName', className: 'form__label' }, "First Name"),
+                        React.createElement("input", { id: 'firstName', type: 'text', defaultValue: 'Mauro', placeholder: '', className: 'form__input form__label--large' })),
+                    React.createElement("div", { className: 'form__field col-large-6' },
+                        React.createElement("label", { htmlFor: 'lastName', className: 'form__label' }, "Last Name"),
+                        React.createElement("input", { id: 'lastName', type: 'text', defaultValue: 'Reis Vieira', placeholder: '', className: 'form__input form__label--large' })),
+                    React.createElement("div", { className: 'form__field col-large-6' },
+                        React.createElement("label", { htmlFor: 'phoneNumber', className: 'form__label' }, "Phone Number"),
+                        React.createElement("input", { id: 'phoneNumber', type: 'text', defaultValue: '917771054', placeholder: '', className: 'form__input form__label--large' })),
+                    React.createElement("div", { className: 'form__field col-large-6' },
+                        React.createElement("label", { htmlFor: 'fieldEmail', className: 'form__label' }, "Email"),
+                        React.createElement("input", { id: 'fieldEmail', type: 'text', defaultValue: 'mauroreisvieira@gmail.com', placeholder: '', className: 'form__input form__label--large' })),
+                    React.createElement("div", { className: 'form__field col-large-6' },
+                        React.createElement("label", { htmlFor: 'fieldBirth', className: 'form__label' }, "Place of birth"),
+                        React.createElement("input", { id: 'fieldBirth', type: 'text', defaultValue: '', placeholder: '', className: 'form__input form__label--large' })),
+                    React.createElement("div", { className: 'form__field col-large-6' },
+                        React.createElement("label", { htmlFor: 'fieldDateBirth', className: 'form__label' }, "Date of birth"),
+                        React.createElement("input", { id: 'fieldDateBirth', type: 'text', defaultValue: '', placeholder: '', className: 'form__input form__label--large' })),
+                    React.createElement("div", { className: 'form__field col-large-12' },
+                        React.createElement("label", { htmlFor: 'fieldMessage', className: 'form__label' }, "Message"),
+                        React.createElement("textarea", { id: 'fieldMessage', className: 'form__textarea', rows: 6 }, "I'm a Portuguese developer, fascinated by web development, who likes what they do. I love to learn, and share my knowledge, in order to enrich my portfolio. I'm an \"Apple Fanboy\", as well as a Sublime Text evangelist (I love this text editor for code).")),
+                    React.createElement("div", { className: 'form__actions col-large-6' },
+                        React.createElement("button", { className: 'button button--large button--success' }, "Save Changes"))))));
+    };
+    return OptionsComponent;
+}(React.Component));
+exports.OptionsComponent = OptionsComponent;
+
+
+/***/ }),
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -616,14 +595,17 @@ var SideBarComponent = /** @class */ (function (_super) {
         return _super.call(this, props) || this;
     }
     SideBarComponent.prototype.render = function () {
-        return (React.createElement("nav", { className: 'sidebar bg-blue--darken' },
+        return (React.createElement("nav", { className: 'sidebar' },
             React.createElement("ul", { className: 'menu menu--inherit' },
                 React.createElement("li", { className: 'menu__item' },
-                    React.createElement("a", { className: 'menu__link', href: 'installation.html', title: 'My Resume' }, "Resumes")),
+                    React.createElement("a", { className: 'menu__link tooltip tooltip--right is-active', href: '', title: '', "data-tooltip": 'New Resume' },
+                        React.createElement("i", { className: 'icon ion-clipboard' }))),
                 React.createElement("li", { className: 'menu__item' },
-                    React.createElement("a", { className: 'menu__link', href: '', title: 'Profile' }, "Profile")),
+                    React.createElement("a", { className: 'menu__link tooltip tooltip--right', href: '', title: '', "data-tooltip": 'Archive' },
+                        React.createElement("i", { className: 'icon ion-ios-box' }))),
                 React.createElement("li", { className: 'menu__item' },
-                    React.createElement("a", { className: 'menu__link', href: 'https://github.com/maurovieirareis/resume', title: 'Github' }, "Github")))));
+                    React.createElement("a", { className: 'menu__link tooltip tooltip--right', href: '', title: '', "data-tooltip": 'Settings' },
+                        React.createElement("i", { className: 'icon ion-gear-b' }))))));
     };
     return SideBarComponent;
 }(React.Component));

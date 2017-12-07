@@ -7,7 +7,7 @@ export class ProfileComponent extends React.Component {
 
     constructor (props: any) {
         super(props);
-        this.user = new User('Mauro', 27);
+        this.user = new User('Mauro Reis Vieir', 27);
     }
 
     public render(): any {
