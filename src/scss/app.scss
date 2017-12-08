@@ -4,14 +4,20 @@
 :root {
   // colors
   --color-base: $app-color-base;
+  --color-primary: $app-color-primary;
   --color-white: $app-color-white;
+  --color-blue: $app-color-blue;
   --color-grey-light: $app-color-grey-light;
 
   // padding
   --padding-base: $app-global-padding;
+
   // body
   --body-bg-color: $app-color-white;
   --body-fs: $app-body-font-size;
+
+  // Font Size
+  --fs-lg: pxtoem($app-font-size-lg);
 
   // header
   --header-h: $app-header-height;
@@ -31,9 +37,14 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--body-bg-color);
+  color: var(--color-primary);
   font-size: var(--body-fs);
   text-rendering: optimizeLegibility;
   overflow: hidden;
+}
+
+h1, h2, h3, h4, h5 {
+  color: var(--color-primary);
 }
 
 .wrapper {

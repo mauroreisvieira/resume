@@ -12,14 +12,15 @@
     }
 
     &__link {
-      padding: 1em 0;
+      padding: var(--padding-base) 0;
       color: var(--color-white);
-      font-size: $app-sidebar-icon-size;
+      font-size: var(--fs-lg);
 
       &:hover,
       &.is-active {
-        background-color: rgba($app-color-white, .4);
         opacity: 1;
+        background-color: var(--color-grey-light);
+        color: var(--color-base);
       }
     }
   }

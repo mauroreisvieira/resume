@@ -1,26 +1,29 @@
 .app-education {
   width: 100%;
-  padding: 12px;
+  padding: 1em;
   background-color: #fff; }
 .app-employment {
   width: 100%;
   background-color: #fff;
-  padding: 12px; }
+  padding: 1em; }
 .app-profile {
   width: 100%;
-  padding: 12px;
+  padding: 1em;
   background-color: #fff; }
 .app-skill {
   width: 100%;
-  padding: 12px;
+  padding: 1em;
   background-color: #fff; }
 :root {
   --color-base: #f44c67;
+  --color-primary: #1d1d1f;
   --color-white: #fff;
+  --color-blue: #3e70ff;
   --color-grey-light: #f3f4f8;
-  --padding-base: 12px;
+  --padding-base: 1em;
   --body-bg-color: #fff;
   --body-fs: 16px;
+  --fs-lg: 1.5em;
   --header-h: 74px;
   --sidebar-w: 80px;
   --aside-w: 460px; }
@@ -34,9 +37,13 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--body-bg-color);
+  color: var(--color-primary);
   font-size: var(--body-fs);
   text-rendering: optimizeLegibility;
   overflow: hidden; }
+
+h1, h2, h3, h4, h5 {
+  color: var(--color-primary); }
 
 .wrapper {
   display: grid;
@@ -64,18 +71,20 @@ body {
       width: 100%;
       text-align: center; }
     .sidebar .menu__link {
-      padding: 1em 0;
+      padding: var(--padding-base) 0;
       color: var(--color-white);
-      font-size: 1.5em; }
+      font-size: var(--fs-lg); }
       .sidebar .menu__link:hover, .sidebar .menu__link.is-active {
-        background-color: rgba(255, 255, 255, 0.4);
-        opacity: 1; }
+        opacity: 1;
+        background-color: var(--color-grey-light);
+        color: var(--color-base); }
 
 .aside {
   grid-area: aside;
   width: var(--aside-w);
   height: calc(100vh - var(--header-h));
   padding: calc(var(--padding-base) * 2);
+  padding-top: calc(var(--padding-base) / 2);
   background-color: var(--color-grey-light); }
 
 .main {
@@ -88,10 +97,14 @@ body {
 
 .button {
   border-radius: 4px; }
+  .button--info {
+    background-color: var(--color-blue); }
+    .button--info:hover::before {
+      background-color: var(--color-primary); }
 
 .form__label {
-  font-weight: 500;
-  font-size: 0.75em; }
+  font-size: 0.75em;
+  font-weight: 500; }
 
 .form__input {
   border: 1px solid #eef0f3;

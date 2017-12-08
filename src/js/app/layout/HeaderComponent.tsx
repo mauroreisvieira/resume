@@ -12,7 +12,7 @@ export class HeaderComponent extends React.Component  {
                     <span className='uppercase semibold large'>Resume App</span>
                 </div>
                 <div className='navbar__menu'>
-                    <button className='button button--small button--default'>
+                    <button className='button button--small button--info'>
                             <i className='icon ion-android-download mr-10 medium'></i>
                             Export Resume
                     </button>

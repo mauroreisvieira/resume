@@ -17,7 +17,7 @@ export class OptionsComponent extends React.Component  {
     public render(): any {
         return (
             <aside className='aside'>
-                <form action='' className='form'>
+                <form action='' className='form mt-0'>
                     <div className='row'>
                         <div className='col-large-12'>
                         <h4>Personal Information</h4>
@@ -60,13 +60,13 @@ export class OptionsComponent extends React.Component  {
                             <label htmlFor='fieldBirth' className='form__label'>
                                 Place of birth
                             </label>
-                            <input id='fieldBirth' type='text' defaultValue='' placeholder='' className='form__input form__label--large' />
+                            <input id='fieldBirth' type='text' defaultValue='Tomar' placeholder='' className='form__input form__label--large' />
                         </div>
                         <div className='form__field col-large-6'>
                             <label htmlFor='fieldDateBirth' className='form__label'>
                                 Date of birth
                             </label>
-                            <input id='fieldDateBirth' type='text' defaultValue='' placeholder='' className='form__input form__label--large' />
+                            <input id='fieldDateBirth' type='text' defaultValue='1990-06-01' placeholder='' className='form__input form__label--large' />
                         </div>
                         <div className='form__field col-large-12'>
                             <label htmlFor='fieldMessage' className='form__label'>

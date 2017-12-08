@@ -495,7 +495,7 @@ var HeaderComponent = /** @class */ (function (_super) {
             React.createElement("div", { className: 'navbar__brand' },
                 React.createElement("span", { className: 'uppercase semibold large' }, "Resume App")),
             React.createElement("div", { className: 'navbar__menu' },
-                React.createElement("button", { className: 'button button--small button--default' },
+                React.createElement("button", { className: 'button button--small button--info' },
                     React.createElement("i", { className: 'icon ion-android-download mr-10 medium' }),
                     "Export Resume"))));
     };
@@ -535,7 +535,7 @@ var OptionsComponent = /** @class */ (function (_super) {
     };
     OptionsComponent.prototype.render = function () {
         return (React.createElement("aside", { className: 'aside' },
-            React.createElement("form", { action: '', className: 'form' },
+            React.createElement("form", { action: '', className: 'form mt-0' },
                 React.createElement("div", { className: 'row' },
                     React.createElement("div", { className: 'col-large-12' },
                         React.createElement("h4", null, "Personal Information")),
@@ -556,10 +556,10 @@ var OptionsComponent = /** @class */ (function (_super) {
                         React.createElement("input", { id: 'fieldEmail', type: 'text', defaultValue: 'mauroreisvieira@gmail.com', placeholder: '', className: 'form__input form__label--large' })),
                     React.createElement("div", { className: 'form__field col-large-6' },
                         React.createElement("label", { htmlFor: 'fieldBirth', className: 'form__label' }, "Place of birth"),
-                        React.createElement("input", { id: 'fieldBirth', type: 'text', defaultValue: '', placeholder: '', className: 'form__input form__label--large' })),
+                        React.createElement("input", { id: 'fieldBirth', type: 'text', defaultValue: 'Tomar', placeholder: '', className: 'form__input form__label--large' })),
                     React.createElement("div", { className: 'form__field col-large-6' },
                         React.createElement("label", { htmlFor: 'fieldDateBirth', className: 'form__label' }, "Date of birth"),
-                        React.createElement("input", { id: 'fieldDateBirth', type: 'text', defaultValue: '', placeholder: '', className: 'form__input form__label--large' })),
+                        React.createElement("input", { id: 'fieldDateBirth', type: 'text', defaultValue: '1990-06-01', placeholder: '', className: 'form__input form__label--large' })),
                     React.createElement("div", { className: 'form__field col-large-12' },
                         React.createElement("label", { htmlFor: 'fieldMessage', className: 'form__label' }, "Message"),
                         React.createElement("textarea", { id: 'fieldMessage', className: 'form__textarea', rows: 6 }, "I'm a Portuguese developer, fascinated by web development, who likes what they do. I love to learn, and share my knowledge, in order to enrich my portfolio. I'm an \"Apple Fanboy\", as well as a Sublime Text evangelist (I love this text editor for code).")),
@@ -598,14 +598,17 @@ var SideBarComponent = /** @class */ (function (_super) {
         return (React.createElement("nav", { className: 'sidebar' },
             React.createElement("ul", { className: 'menu menu--inherit' },
                 React.createElement("li", { className: 'menu__item' },
-                    React.createElement("a", { className: 'menu__link tooltip tooltip--right is-active', href: '', title: '', "data-tooltip": 'New Resume' },
-                        React.createElement("i", { className: 'icon ion-clipboard' }))),
+                    React.createElement("a", { className: 'menu__link tooltip tooltip--right is-active', href: '', title: '', "data-tooltip": 'Personal Information' },
+                        React.createElement("i", { className: 'icon ion-person' }))),
                 React.createElement("li", { className: 'menu__item' },
-                    React.createElement("a", { className: 'menu__link tooltip tooltip--right', href: '', title: '', "data-tooltip": 'Archive' },
-                        React.createElement("i", { className: 'icon ion-ios-box' }))),
+                    React.createElement("a", { className: 'menu__link tooltip tooltip--right', href: '', title: '', "data-tooltip": 'Employment History' },
+                        React.createElement("i", { className: 'icon ion-ios-briefcase' }))),
                 React.createElement("li", { className: 'menu__item' },
-                    React.createElement("a", { className: 'menu__link tooltip tooltip--right', href: '', title: '', "data-tooltip": 'Settings' },
-                        React.createElement("i", { className: 'icon ion-gear-b' }))))));
+                    React.createElement("a", { className: 'menu__link tooltip tooltip--right', href: '', title: '', "data-tooltip": 'Education' },
+                        React.createElement("i", { className: 'icon ion-university' }))),
+                React.createElement("li", { className: 'menu__item' },
+                    React.createElement("a", { className: 'menu__link tooltip tooltip--right', href: '', title: '', "data-tooltip": 'Skills' },
+                        React.createElement("i", { className: 'icon ion-clipboard' }))))));
     };
     return SideBarComponent;
 }(React.Component));
