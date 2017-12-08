@@ -29,7 +29,7 @@ export class SkillComponent extends React.Component {
                     <div className='col-large-12'>
                         <h5 className='x-bold'>Skills</h5>
                      </div>
-                    <div className='col-large-3'>
+                    <div className='col-large-2'>
                         <ul className='list'>
                             <li className='list__item'>
                                 <p>HTML</p>
@@ -51,7 +51,7 @@ export class SkillComponent extends React.Component {
                             </li>
                         </ul>
                     </div>
-                    <div className='col-large-3'>
+                    <div className='col-large-2'>
                         <ul className='list'>
                             <li className='list__item'>
                                 <p className='text-salmon'>{this.dotSkill(5)}</p>
@@ -73,7 +73,7 @@ export class SkillComponent extends React.Component {
                             </li>
                         </ul>
                     </div>
-                    <div className='col-large-3'>
+                    <div className='col-large-2'>
                         <ul className='list'>
                             <li className='list__item'>
                                 <p>PHP</p>
@@ -95,7 +95,51 @@ export class SkillComponent extends React.Component {
                             </li>
                         </ul>
                     </div>
-                    <div className='col-large-3'>
+                    <div className='col-large-2'>
+                        <ul className='list'>
+                            <li className='list__item'>
+                                 <p className='text-salmon'>{this.dotSkill(4)}</p>
+                            </li>
+                            <li className='list__item'>
+                                <p className='text-salmon'>{this.dotSkill(4)}</p>
+                            </li>
+                            <li className='list__item'>
+                                <p className='text-salmon'>{this.dotSkill(4)}</p>
+                            </li>
+                            <li className='list__item'>
+                                <p className='text-salmon'>{this.dotSkill(4)}</p>
+                            </li>
+                            <li className='list__item'>
+                                <p className='text-salmon'>{this.dotSkill(4)}</p>
+                            </li>
+                            <li className='list__item'>
+                                <p className='text-salmon'>{this.dotSkill(4)}</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className='col-large-2'>
+                        <ul className='list'>
+                            <li className='list__item'>
+                                <p>PHP</p>
+                            </li>
+                            <li className='list__item'>
+                                <p>Laravel</p>
+                            </li>
+                            <li className='list__item'>
+                                <p>Zend</p>
+                            </li>
+                            <li className='list__item'>
+                                <p>Codeigniter</p>
+                            </li>
+                            <li className='list__item'>
+                                <p>Codeigniter</p>
+                            </li>
+                            <li className='list__item'>
+                                <p>Codeigniter</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className='col-large-2'>
                         <ul className='list'>
                             <li className='list__item'>
                                  <p className='text-salmon'>{this.dotSkill(4)}</p>

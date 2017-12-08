@@ -1,15 +1,15 @@
 .app-education {
   width: 100%;
   padding: 1em;
-  background-color: #fff; }
+  border-bottom: 2px solid var(--color-grey-lighter); }
 .app-employment {
   width: 100%;
-  background-color: #fff;
-  padding: 1em; }
+  padding: 1em;
+  border-bottom: 2px solid var(--color-grey-lighter); }
 .app-profile {
   width: 100%;
   padding: 1em;
-  background-color: #fff; }
+  border-bottom: 2px solid var(--color-grey-lighter); }
 .app-skill {
   width: 100%;
   padding: 1em;
@@ -21,6 +21,7 @@
   --color-blue: #3e70ff;
   --color-grey: #525a6f;
   --color-grey-light: #f3f4f8;
+  --color-grey-lighter: #e5e9f2;
   --padding-base: 1em;
   --radius-base: 4px;
   --body-bg-color: #fff;
@@ -120,18 +121,6 @@ hr {
   padding: var(--padding-base);
   overflow: hidden;
   overflow-y: auto; }
-  .main::after {
-    display: block;
-    position: fixed;
-    top: var(--header-h);
-    right: 0;
-    width: calc(100% - (var(--sidebar-w) + var(--aside-w)));
-    height: calc(100vh - var(--header-h));
-    background-color: var(--color-white);
-    opacity: .4;
-    cursor: default;
-    content: "";
-    z-index: 9; }
 
 .button {
   border-radius: var(--radius-base); }
@@ -145,15 +134,15 @@ hr {
   font-weight: 500; }
 
 .form__input {
-  border: 1px solid #eef0f3;
+  border: 1px solid var(--color-grey-lighter);
   border-radius: var(--radius-base);
-  background-color: #f9fafc;
+  background-color: var(--color-white);
   font-size: 0.875em; }
 
 .form__textarea {
-  border: 1px solid #eef0f3;
+  border: 1px solid var(--color-grey-lighter);
   border-radius: var(--radius-base);
-  background-color: #fff;
+  background-color: var(--color-white);
   font-size: 0.875em; }
 
 /*# sourceMappingURL=app.css.map*/

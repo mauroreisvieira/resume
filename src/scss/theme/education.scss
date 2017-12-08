@@ -4,6 +4,6 @@
   &-education {
     width: 100%;
     padding: $app-global-padding;
-    background-color: #fff;
+    border-bottom: 2px solid var(--color-grey-lighter);
   }
 }

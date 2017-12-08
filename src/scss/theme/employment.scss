@@ -3,7 +3,7 @@
 .app {
   &-employment {
     width: 100%;
-    background-color: #fff;
     padding: $app-global-padding;
+    border-bottom: 2px solid var(--color-grey-lighter);
   }
 }
