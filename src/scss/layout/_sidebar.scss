@@ -17,10 +17,6 @@
       color: var(--color-white);
       font-size: var(--fs-lg);
 
-      &:active {
-        transform: scale3d(0.97, 0.97, 0.97);
-      }
-
       &:hover,
       &.is-active {
         background-color: var(--color-grey-light);

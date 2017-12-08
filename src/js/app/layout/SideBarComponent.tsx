@@ -29,6 +29,16 @@ export class SideBarComponent extends React.Component  {
                             <i className='icon ion-clipboard'></i>
                         </a>
                     </li>
+                    <li className='menu__item'>
+                        <a className='menu__link tooltip tooltip--right' href='' title='' data-tooltip='Languages'>
+                            <i className='icon ion-android-globe'></i>
+                        </a>
+                    </li>
+                    <li className='menu__item'>
+                        <a className='menu__link tooltip tooltip--right' href='' title='' data-tooltip='Hobbies'>
+                            <i className='icon ion-ios-heart'></i>
+                        </a>
+                    </li>
                 </ul>
             </nav>
         );

@@ -20,7 +20,10 @@ export class OptionsComponent extends React.Component  {
                 <form action='' className='form mt-0'>
                     <div className='row'>
                         <div className='col-large-12'>
-                        <h4>Personal Information</h4>
+                            <div className='aside__header'>
+                                <h4 className='text-right'>Personal Information</h4>
+                                <span className='uppercase small'>Write your personal information to blá blá blá</span>
+                            </div>
                         </div>
                         <div className='form__field col-large-12'>
                             <label htmlFor='postionApplying' className='form__label'>
@@ -68,9 +71,45 @@ export class OptionsComponent extends React.Component  {
                             </label>
                             <input id='fieldDateBirth' type='text' defaultValue='1990-06-01' placeholder='' className='form__input form__label--large' />
                         </div>
+                        <div className='form__field col-large-6'>
+                            <label htmlFor='fieldDriving' className='form__label'>
+                                Driving License
+                            </label>
+                            <input id='fieldDriving' type='text' defaultValue='A e A1, B e B1 (SA – 195984 5)' placeholder='' className='form__input form__label--large' />
+                        </div>
+                        <div className='form__field col-large-6'>
+                            <label htmlFor='fieldNationality' className='form__label'>
+                                Nationality
+                            </label>
+                            <input id='fieldNationality' type='text' defaultValue='Portuguese' placeholder='' className='form__input form__label--large' />
+                        </div>
+                        <div className='form__field col-large-6'>
+                            <label htmlFor='fieldCity' className='form__label'>
+                                City
+                            </label>
+                            <input id='fieldCity' type='text' defaultValue='Leiria' placeholder='' className='form__input form__label--large' />
+                        </div>
+                        <div className='form__field col-large-6'>
+                            <label htmlFor='fieldCode' className='form__label'>
+                                Postal Code
+                            </label>
+                            <input id='fieldCode' type='text' defaultValue='2410-112' placeholder='' className='form__input form__label--large' />
+                        </div>
+                        <div className='form__field col-large-6'>
+                            <label htmlFor='fieldAddress' className='form__label'>
+                                Address
+                            </label>
+                            <input id='fieldAddress' type='text' defaultValue='Rua João Paulo II LT.4 3º E' placeholder='' className='form__input form__label--large' />
+                        </div>
+                        <div className='form__field col-large-6'>
+                            <label htmlFor='fieldCountry' className='form__label'>
+                                Country
+                            </label>
+                            <input id='fieldCountry' type='text' defaultValue='Portugal' placeholder='' className='form__input form__label--large' />
+                        </div>
                         <div className='form__field col-large-12'>
                             <label htmlFor='fieldMessage' className='form__label'>
-                                Message
+                                Professional Summary
                             </label>
                             <textarea id='fieldMessage' className='form__textarea' rows={6}>
                                 I'm a Portuguese developer, fascinated by web development, who likes what they do. I love to learn, and share my knowledge, in order to enrich my portfolio. I'm an "Apple Fanboy", as well as a Sublime Text evangelist (I love this text editor for code).

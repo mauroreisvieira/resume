@@ -1,8 +1,23 @@
 .main {
+  position: relative;
   flex-direction: column;
   height: calc(100vh - var(--header-h));
   grid-area: main;
   padding: var(--padding-base);
   overflow: hidden;
   overflow-y: auto;
+
+  &::after {
+    display: block;
+    position: fixed;
+    top: var(--header-h);
+    right: 0;
+    width: calc(100% - (var(--sidebar-w) + var(--aside-w)));
+    height: calc(100vh - var(--header-h));
+    background-color: var(--color-white);
+    opacity: .4;
+    cursor: default;
+    content: "";
+    z-index: 9;
+  }
 }

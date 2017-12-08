@@ -7,6 +7,7 @@
   --color-primary: $app-color-primary;
   --color-white: $app-color-white;
   --color-blue: $app-color-blue;
+  --color-grey: $app-color-grey;
   --color-grey-light: $app-color-grey-light;
 
   // padding
@@ -48,6 +49,15 @@ body {
 
 h1, h2, h3, h4, h5 {
   color: var(--color-primary);
+}
+
+
+hr {
+  height: 2px;
+  width: 100%;
+  display: block;
+  border: 0;
+  margin-top: 20px;
 }
 
 .wrapper {
