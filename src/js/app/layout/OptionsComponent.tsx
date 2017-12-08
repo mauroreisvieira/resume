@@ -77,7 +77,7 @@ export class OptionsComponent extends React.Component  {
                             </textarea>
                         </div>
                         <div className='form__actions col-large-6'>
-                            <button className='button button--large button--success'>Save Changes</button>
+                            <button className='button button--large button--info'>Save Changes</button>
                         </div>
                     </div>
                 </form>

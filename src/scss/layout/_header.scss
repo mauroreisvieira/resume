@@ -8,6 +8,12 @@
   .navbar {
     &__brand {
       color: $app-color-blue;
+
+      img {
+        position: relative;
+        top: 3px;
+        width: 160px;
+      }
     }
   }
 

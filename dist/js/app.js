@@ -493,11 +493,8 @@ var HeaderComponent = /** @class */ (function (_super) {
     HeaderComponent.prototype.render = function () {
         return (React.createElement("header", { className: 'header navbar navbar--spacebetween' },
             React.createElement("div", { className: 'navbar__brand' },
-                React.createElement("span", { className: 'uppercase semibold large' }, "Resume App")),
-            React.createElement("div", { className: 'navbar__menu' },
-                React.createElement("button", { className: 'button button--small button--info' },
-                    React.createElement("i", { className: 'icon ion-android-download mr-10 medium' }),
-                    "Export Resume"))));
+                React.createElement("img", { src: './assets/images/logo.svg', alt: 'My Vitae', title: 'My Vitae' })),
+            React.createElement("div", { className: 'navbar__menu' })));
     };
     return HeaderComponent;
 }(React.Component));
@@ -564,7 +561,7 @@ var OptionsComponent = /** @class */ (function (_super) {
                         React.createElement("label", { htmlFor: 'fieldMessage', className: 'form__label' }, "Message"),
                         React.createElement("textarea", { id: 'fieldMessage', className: 'form__textarea', rows: 6 }, "I'm a Portuguese developer, fascinated by web development, who likes what they do. I love to learn, and share my knowledge, in order to enrich my portfolio. I'm an \"Apple Fanboy\", as well as a Sublime Text evangelist (I love this text editor for code).")),
                     React.createElement("div", { className: 'form__actions col-large-6' },
-                        React.createElement("button", { className: 'button button--large button--success' }, "Save Changes"))))));
+                        React.createElement("button", { className: 'button button--large button--info' }, "Save Changes"))))));
     };
     return OptionsComponent;
 }(React.Component));

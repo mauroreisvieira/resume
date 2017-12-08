@@ -9,13 +9,10 @@ export class HeaderComponent extends React.Component  {
         return (
             <header className='header navbar navbar--spacebetween'>
                 <div className='navbar__brand'>
-                    <span className='uppercase semibold large'>Resume App</span>
+                    <img src='./assets/images/logo.svg' alt='My Vitae' title='My Vitae' />
                 </div>
                 <div className='navbar__menu'>
-                    <button className='button button--small button--info'>
-                            <i className='icon ion-android-download mr-10 medium'></i>
-                            Export Resume
-                    </button>
+
                 </div>
             </header>
         );

@@ -4,7 +4,7 @@
   background-color: var(--color-base);
 
   .menu {
-    margin-top: var(--header-h);
+    margin-top: 0;
 
     &__item {
       width: 100%;
@@ -13,14 +13,23 @@
 
     &__link {
       padding: var(--padding-base) 0;
+      border-radius: 0;
       color: var(--color-white);
       font-size: var(--fs-lg);
 
+      &:active {
+        transform: scale3d(0.97, 0.97, 0.97);
+      }
+
       &:hover,
       &.is-active {
-        opacity: 1;
         background-color: var(--color-grey-light);
+        opacity: 1;
         color: var(--color-base);
+      }
+
+      &.is-active {
+        pointer-events: none;
       }
     }
   }

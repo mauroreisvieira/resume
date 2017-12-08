@@ -21,12 +21,13 @@
   --color-blue: #3e70ff;
   --color-grey-light: #f3f4f8;
   --padding-base: 1em;
+  --radius-base: 4px;
   --body-bg-color: #fff;
   --body-fs: 16px;
   --fs-lg: 1.5em;
   --header-h: 74px;
   --sidebar-w: 80px;
-  --aside-w: 460px; }
+  --aside-w: 480px; }
 
 * {
   box-sizing: border-box; }
@@ -48,7 +49,7 @@ h1, h2, h3, h4, h5 {
 .wrapper {
   display: grid;
   grid-template-columns: var(--sidebar-w) var(--aside-w) calc(100% - (var(--sidebar-w) + var(--aside-w)));
-  grid-template-areas: "sidebar header header" "sidebar aside main"; }
+  grid-template-areas: "header header header" "sidebar aside main"; }
 
 .header {
   grid-area: header;
@@ -58,6 +59,10 @@ h1, h2, h3, h4, h5 {
   z-index: 91; }
   .header .navbar__brand {
     color: #3e70ff; }
+    .header .navbar__brand img {
+      position: relative;
+      top: 3px;
+      width: 160px; }
   .header .menu__link {
     color: #1d1d1f; }
 
@@ -66,18 +71,23 @@ h1, h2, h3, h4, h5 {
   width: var(--sidebar-w);
   background-color: var(--color-base); }
   .sidebar .menu {
-    margin-top: var(--header-h); }
+    margin-top: 0; }
     .sidebar .menu__item {
       width: 100%;
       text-align: center; }
     .sidebar .menu__link {
       padding: var(--padding-base) 0;
+      border-radius: 0;
       color: var(--color-white);
       font-size: var(--fs-lg); }
+      .sidebar .menu__link:active {
+        transform: scale3d(0.97, 0.97, 0.97); }
       .sidebar .menu__link:hover, .sidebar .menu__link.is-active {
-        opacity: 1;
         background-color: var(--color-grey-light);
+        opacity: 1;
         color: var(--color-base); }
+      .sidebar .menu__link.is-active {
+        pointer-events: none; }
 
 .aside {
   grid-area: aside;
@@ -96,7 +106,7 @@ h1, h2, h3, h4, h5 {
   overflow-y: auto; }
 
 .button {
-  border-radius: 4px; }
+  border-radius: var(--radius-base); }
   .button--info {
     background-color: var(--color-blue); }
     .button--info:hover::before {
@@ -108,14 +118,14 @@ h1, h2, h3, h4, h5 {
 
 .form__input {
   border: 1px solid #eef0f3;
-  border-radius: 4px;
+  border-radius: var(--radius-base);
   background-color: #f9fafc;
   font-size: 0.875em; }
 
 .form__textarea {
   border: 1px solid #eef0f3;
-  border-radius: 4px;
-  background-color: #f9fafc;
+  border-radius: var(--radius-base);
+  background-color: #fff;
   font-size: 0.875em; }
 
 /*# sourceMappingURL=app.css.map*/

@@ -12,6 +12,9 @@
   // padding
   --padding-base: $app-global-padding;
 
+  // radius
+  --radius-base: $app-global-radius;
+
   // body
   --body-bg-color: $app-color-white;
   --body-fs: $app-body-font-size;
@@ -50,7 +53,7 @@ h1, h2, h3, h4, h5 {
 .wrapper {
   display: grid;
   grid-template-columns: var(--sidebar-w) var(--aside-w) calc(100% - (var(--sidebar-w) + var(--aside-w)));
-  grid-template-areas: "sidebar header header" "sidebar aside main";
+  grid-template-areas: "header header header" "sidebar aside main";
 }
 
 @import "layout/header";
