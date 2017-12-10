@@ -32,6 +32,7 @@
     "mobx-react-devtools": "^4.2.15",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2",
     "stewed": "^0.9.55",
     "style-loader": "^0.19.0",
     "webpack-dev-server": "^2.9.7"
