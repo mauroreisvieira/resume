@@ -1,4 +1,6 @@
 import * as React from 'react';
+import { HashRouter, Route, Switch } from 'react-router-dom';
+
 import { FooterComponent } from './layout/FooterComponent';
 import { HeaderComponent } from './layout/HeaderComponent';
 import { OptionsComponent } from './layout/OptionsComponent';
@@ -21,10 +23,12 @@ export class WrapperComponent extends React.Component {
                 <SideBarComponent />
                 <OptionsComponent />
                 <main className='main'>
-                    <ProfileComponent />
-                    <EmploymentComponent />
-                    <EducationComponent />
-                    <SkillComponent />
+                    <Switch>
+                        <Route exact={true} path='/' component={ProfileComponent} />
+                        <Route path='/education' component={EducationComponent} />
+                        <Route path='/employment' component={EmploymentComponent} />
+                        <Route path='/skill' component={SkillComponent} />
+                    </Switch>
                 </main>
             </div>
         );

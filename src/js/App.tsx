@@ -1,6 +1,8 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 import { WrapperComponent } from './app/WrapperComponent';
+
 import '../scss/app.scss';
 
 export default class App {
@@ -10,7 +12,9 @@ export default class App {
 
     public init(): void {
         ReactDOM.render(
-            <WrapperComponent />,
+            <BrowserRouter>
+                <WrapperComponent />
+            </BrowserRouter>,
             document.getElementById('app')
         );
     }
