@@ -4,17 +4,17 @@ import User from './../model/User';
 
 export class ProfileComponent extends React.Component {
     public user: User;
+    public postionApplying: any;
 
     constructor (props: any) {
         super(props);
         this.user = new User('Mauro Reis Vieir', 27);
+        this.postionApplying = 'Senior Front end Developerd';
     }
 
     public handleKeyPress(event: any): void {
-        console.log(event.target.value);
-        if (event.key === 'Enter') {
-            console.log('enter press here!');
-        }
+        this.postionApplying = event.target.value;
+        console.log(this.postionApplying );
     }
 
     public render(): any {
@@ -35,7 +35,7 @@ export class ProfileComponent extends React.Component {
                                 </label>
                                 <input id='postionApplying'
                                     type='text'
-                                    defaultValue='Senio Front end Developer'
+                                    defaultValue={this.postionApplying}
                                     onKeyUp={this.handleKeyPress}
                                     className='form__input form__label--large' />
                             </div>
@@ -131,12 +131,12 @@ export class ProfileComponent extends React.Component {
                             <div className='col-large-9'>
                                 <h1 className='x-large semibold'>
                                     Mauro Reis Vieira <br />
-                                    <span className='thin medium'>Senio Front end Developer</span>
+                                    <span className='thin medium'>{this.postionApplying}</span>
                                 </h1>
                             </div>
                             <div className='col-large-3 text-right'>
                                 <div>
-                                    <img src="https://pbs.twimg.com/profile_images/913828202832973826/1WWUHoo5_400x400.jpg" className='w-7 h-7 circle text-right' />
+                                    <img src='https://pbs.twimg.com/profile_images/913828202832973826/1WWUHoo5_400x400.jpg' className='w-7 h-7 circle text-right' />
                                 </div>
                             </div>
                         </div>
