@@ -21,15 +21,13 @@ export class WrapperComponent extends React.Component {
             <div className='wrapper'>
                 <HeaderComponent />
                 <SideBarComponent />
-                <OptionsComponent />
-                <main className='main'>
-                    <Switch>
-                        <Route exact={true} path='/' component={ProfileComponent} />
-                        <Route path='/education' component={EducationComponent} />
-                        <Route path='/employment' component={EmploymentComponent} />
-                        <Route path='/skill' component={SkillComponent} />
-                    </Switch>
-                </main>
+
+                <Switch>
+                    <Route exact={true} path='/' component={ProfileComponent} />
+                    <Route path='/education' component={EducationComponent} />
+                    <Route path='/employment' component={EmploymentComponent} />
+                    <Route path='/skill' component={SkillComponent} />
+                </Switch>
             </div>
         );
     }

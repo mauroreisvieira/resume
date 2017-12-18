@@ -5732,7 +5732,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(0);
 var react_router_dom_1 = __webpack_require__(7);
 var HeaderComponent_1 = __webpack_require__(59);
-var OptionsComponent_1 = __webpack_require__(60);
 var SideBarComponent_1 = __webpack_require__(61);
 var EducationComponent_1 = __webpack_require__(62);
 var EmploymentComponent_1 = __webpack_require__(64);
@@ -5747,13 +5746,11 @@ var WrapperComponent = /** @class */ (function (_super) {
         return (React.createElement("div", { className: 'wrapper' },
             React.createElement(HeaderComponent_1.HeaderComponent, null),
             React.createElement(SideBarComponent_1.SideBarComponent, null),
-            React.createElement(OptionsComponent_1.OptionsComponent, null),
-            React.createElement("main", { className: 'main' },
-                React.createElement(react_router_dom_1.Switch, null,
-                    React.createElement(react_router_dom_1.Route, { exact: true, path: '/', component: ProfileComponent_1.ProfileComponent }),
-                    React.createElement(react_router_dom_1.Route, { path: '/education', component: EducationComponent_1.EducationComponent }),
-                    React.createElement(react_router_dom_1.Route, { path: '/employment', component: EmploymentComponent_1.EmploymentComponent }),
-                    React.createElement(react_router_dom_1.Route, { path: '/skill', component: SkillComponent_1.SkillComponent })))));
+            React.createElement(react_router_dom_1.Switch, null,
+                React.createElement(react_router_dom_1.Route, { exact: true, path: '/', component: ProfileComponent_1.ProfileComponent }),
+                React.createElement(react_router_dom_1.Route, { path: '/education', component: EducationComponent_1.EducationComponent }),
+                React.createElement(react_router_dom_1.Route, { path: '/employment', component: EmploymentComponent_1.EmploymentComponent }),
+                React.createElement(react_router_dom_1.Route, { path: '/skill', component: SkillComponent_1.SkillComponent }))));
     };
     return WrapperComponent;
 }(React.Component));
@@ -5800,93 +5797,7 @@ exports.HeaderComponent = HeaderComponent;
 
 
 /***/ }),
-/* 60 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-Object.defineProperty(exports, "__esModule", { value: true });
-var React = __webpack_require__(0);
-var OptionsComponent = /** @class */ (function (_super) {
-    __extends(OptionsComponent, _super);
-    function OptionsComponent(props) {
-        return _super.call(this, props) || this;
-    }
-    OptionsComponent.prototype.handleKeyPress = function (event) {
-        console.log(event.target.value);
-        if (event.key === 'Enter') {
-            console.log('enter press here!');
-        }
-    };
-    OptionsComponent.prototype.render = function () {
-        return (React.createElement("aside", { className: 'aside' },
-            React.createElement("form", { action: '', className: 'form mt-0' },
-                React.createElement("div", { className: 'row' },
-                    React.createElement("div", { className: 'col-large-12' },
-                        React.createElement("div", { className: 'aside__header' },
-                            React.createElement("h4", { className: 'text-right' }, "Personal Information"),
-                            React.createElement("span", { className: 'uppercase small' }, "Write your personal information to bl\u00E1 bl\u00E1 bl\u00E1"))),
-                    React.createElement("div", { className: 'form__field col-large-12' },
-                        React.createElement("label", { htmlFor: 'postionApplying', className: 'form__label' }, "Position you are applying for"),
-                        React.createElement("input", { id: 'postionApplying', type: 'text', defaultValue: 'Senio Front end Developer', onKeyUp: this.handleKeyPress, className: 'form__input form__label--large' })),
-                    React.createElement("div", { className: 'form__field col-large-6' },
-                        React.createElement("label", { htmlFor: 'firstName', className: 'form__label' }, "First Name"),
-                        React.createElement("input", { id: 'firstName', type: 'text', defaultValue: 'Mauro', placeholder: '', className: 'form__input form__label--large' })),
-                    React.createElement("div", { className: 'form__field col-large-6' },
-                        React.createElement("label", { htmlFor: 'lastName', className: 'form__label' }, "Last Name"),
-                        React.createElement("input", { id: 'lastName', type: 'text', defaultValue: 'Reis Vieira', placeholder: '', className: 'form__input form__label--large' })),
-                    React.createElement("div", { className: 'form__field col-large-6' },
-                        React.createElement("label", { htmlFor: 'phoneNumber', className: 'form__label' }, "Phone Number"),
-                        React.createElement("input", { id: 'phoneNumber', type: 'text', defaultValue: '917771054', placeholder: '', className: 'form__input form__label--large' })),
-                    React.createElement("div", { className: 'form__field col-large-6' },
-                        React.createElement("label", { htmlFor: 'fieldEmail', className: 'form__label' }, "Email"),
-                        React.createElement("input", { id: 'fieldEmail', type: 'text', defaultValue: 'mauroreisvieira@gmail.com', placeholder: '', className: 'form__input form__label--large' })),
-                    React.createElement("div", { className: 'form__field col-large-6' },
-                        React.createElement("label", { htmlFor: 'fieldBirth', className: 'form__label' }, "Place of birth"),
-                        React.createElement("input", { id: 'fieldBirth', type: 'text', defaultValue: 'Tomar', placeholder: '', className: 'form__input form__label--large' })),
-                    React.createElement("div", { className: 'form__field col-large-6' },
-                        React.createElement("label", { htmlFor: 'fieldDateBirth', className: 'form__label' }, "Date of birth"),
-                        React.createElement("input", { id: 'fieldDateBirth', type: 'text', defaultValue: '1990-06-01', placeholder: '', className: 'form__input form__label--large' })),
-                    React.createElement("div", { className: 'form__field col-large-6' },
-                        React.createElement("label", { htmlFor: 'fieldDriving', className: 'form__label' }, "Driving License"),
-                        React.createElement("input", { id: 'fieldDriving', type: 'text', defaultValue: 'A e A1, B e B1 (SA – 195984 5)', placeholder: '', className: 'form__input form__label--large' })),
-                    React.createElement("div", { className: 'form__field col-large-6' },
-                        React.createElement("label", { htmlFor: 'fieldNationality', className: 'form__label' }, "Nationality"),
-                        React.createElement("input", { id: 'fieldNationality', type: 'text', defaultValue: 'Portuguese', placeholder: '', className: 'form__input form__label--large' })),
-                    React.createElement("div", { className: 'form__field col-large-6' },
-                        React.createElement("label", { htmlFor: 'fieldCity', className: 'form__label' }, "City"),
-                        React.createElement("input", { id: 'fieldCity', type: 'text', defaultValue: 'Leiria', placeholder: '', className: 'form__input form__label--large' })),
-                    React.createElement("div", { className: 'form__field col-large-6' },
-                        React.createElement("label", { htmlFor: 'fieldCode', className: 'form__label' }, "Postal Code"),
-                        React.createElement("input", { id: 'fieldCode', type: 'text', defaultValue: '2410-112', placeholder: '', className: 'form__input form__label--large' })),
-                    React.createElement("div", { className: 'form__field col-large-6' },
-                        React.createElement("label", { htmlFor: 'fieldAddress', className: 'form__label' }, "Address"),
-                        React.createElement("input", { id: 'fieldAddress', type: 'text', defaultValue: 'Rua João Paulo II LT.4 3º E', placeholder: '', className: 'form__input form__label--large' })),
-                    React.createElement("div", { className: 'form__field col-large-6' },
-                        React.createElement("label", { htmlFor: 'fieldCountry', className: 'form__label' }, "Country"),
-                        React.createElement("input", { id: 'fieldCountry', type: 'text', defaultValue: 'Portugal', placeholder: '', className: 'form__input form__label--large' })),
-                    React.createElement("div", { className: 'form__field col-large-12' },
-                        React.createElement("label", { htmlFor: 'fieldMessage', className: 'form__label' }, "Professional Summary"),
-                        React.createElement("textarea", { id: 'fieldMessage', className: 'form__textarea', rows: 6 }, "I'm a Portuguese developer, fascinated by web development, who likes what they do. I love to learn, and share my knowledge, in order to enrich my portfolio. I'm an \"Apple Fanboy\", as well as a Sublime Text evangelist (I love this text editor for code).")),
-                    React.createElement("div", { className: 'form__actions col-large-6' },
-                        React.createElement("button", { className: 'button button--large button--info' }, "Save Changes"))))));
-    };
-    return OptionsComponent;
-}(React.Component));
-exports.OptionsComponent = OptionsComponent;
-
-
-/***/ }),
+/* 60 */,
 /* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5914,7 +5825,7 @@ var SideBarComponent = /** @class */ (function (_super) {
         return (React.createElement("nav", { className: 'sidebar' },
             React.createElement("ul", { className: 'menu menu--inherit' },
                 React.createElement("li", { className: 'menu__item' },
-                    React.createElement(react_router_dom_1.Link, { to: '/', className: 'menu__link tooltip tooltip--right is-active', href: '', title: '', "data-tooltip": 'Personal Information' },
+                    React.createElement(react_router_dom_1.Link, { to: '/', className: 'menu__link tooltip tooltip--right', href: '', title: '', "data-tooltip": 'Personal Information' },
                         React.createElement("i", { className: 'icon ion-person' }))),
                 React.createElement("li", { className: 'menu__item' },
                     React.createElement(react_router_dom_1.Link, { to: '/employment', className: 'menu__link tooltip tooltip--right', href: '', title: '', "data-tooltip": 'Employment History' },
@@ -6080,8 +5991,8 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(0);
-var User_1 = __webpack_require__(67);
 __webpack_require__(68);
+var User_1 = __webpack_require__(67);
 var ProfileComponent = /** @class */ (function (_super) {
     __extends(ProfileComponent, _super);
     function ProfileComponent(props) {
@@ -6089,55 +6000,114 @@ var ProfileComponent = /** @class */ (function (_super) {
         _this.user = new User_1.default('Mauro Reis Vieir', 27);
         return _this;
     }
+    ProfileComponent.prototype.handleKeyPress = function (event) {
+        console.log(event.target.value);
+        if (event.key === 'Enter') {
+            console.log('enter press here!');
+        }
+    };
     ProfileComponent.prototype.render = function () {
-        return (React.createElement("div", { className: 'app-profile' },
-            React.createElement("div", { className: 'row' },
-                React.createElement("div", { className: 'col-large-9' },
-                    React.createElement("h1", { className: 'x-large semibold' },
-                        "Mauro Reis Vieira ",
-                        React.createElement("br", null),
-                        React.createElement("span", { className: 'thin medium' }, "Senio Front end Developer"))),
-                React.createElement("div", { className: 'col-large-3 text-right' },
-                    React.createElement("div", null,
-                        React.createElement("img", { src: "https://pbs.twimg.com/profile_images/913828202832973826/1WWUHoo5_400x400.jpg", className: 'w-7 h-7 circle text-right' })))),
-            React.createElement("div", { className: 'row' },
-                React.createElement("div", { className: 'col-large-2' },
-                    React.createElement("ul", { className: 'list text-salmon uppercase' },
-                        React.createElement("li", { className: 'list__item' },
-                            React.createElement("p", null, "Address")),
-                        React.createElement("li", { className: 'list__item' },
-                            React.createElement("p", null, "Email")),
-                        React.createElement("li", { className: 'list__item' },
-                            React.createElement("p", null, "Nationality")))),
-                React.createElement("div", { className: 'col-large-4' },
-                    React.createElement("ul", { className: 'list' },
-                        React.createElement("li", { className: 'list__item' },
-                            React.createElement("p", null, "Rua Jo\u00E3o Paulo II LT.4 3\u00BA E")),
-                        React.createElement("li", { className: 'list__item' },
-                            React.createElement("p", null, "mauroreisvieira@gmail.com")),
-                        React.createElement("li", { className: 'list__item' },
-                            React.createElement("p", null, "Portuguese")))),
-                React.createElement("div", { className: 'col-large-2' },
-                    React.createElement("ul", { className: 'list text-salmon uppercase' },
-                        React.createElement("li", { className: 'list__item' },
-                            React.createElement("p", null, "Phone")),
-                        React.createElement("li", { className: 'list__item' },
-                            React.createElement("p", null, "Date / Place of Birth")),
-                        React.createElement("li", { className: 'list__item' },
-                            React.createElement("p", null, "Driving License")))),
-                React.createElement("div", { className: 'col-large-4' },
-                    React.createElement("ul", { className: 'list' },
-                        React.createElement("li", { className: 'list__item' },
-                            React.createElement("p", null, "917771054")),
-                        React.createElement("li", { className: 'list__item' },
-                            React.createElement("p", null, "1990-06-01 / Tomar")),
-                        React.createElement("li", { className: 'list__item' },
-                            React.createElement("p", null, "A e A1, B e B1 (SA \u2013 195984 5)"))))),
-            React.createElement("div", { className: 'row' },
-                React.createElement("div", { className: 'col-large-4' },
-                    React.createElement("h5", { className: 'x-bold' }, "Professional Summary")),
-                React.createElement("div", { className: 'col-large-8 offset-large-4' },
-                    React.createElement("p", null, "I'm a Portuguese developer, fascinated by web development, who likes what they do. I love to learn, and share my knowledge, in order to enrich my portfolio. I'm an \"Apple Fanboy\", as well as a Sublime Text evangelist (I love this text editor for code).")))));
+        return (React.createElement("div", { className: 'content' },
+            React.createElement("aside", { className: 'aside' },
+                React.createElement("form", { action: '', className: 'form mt-0' },
+                    React.createElement("div", { className: 'row' },
+                        React.createElement("div", { className: 'col-large-12' },
+                            React.createElement("div", { className: 'aside__header' },
+                                React.createElement("h4", { className: 'text-right' }, "Personal Information"),
+                                React.createElement("span", { className: 'uppercase small' }, "Write your personal information to bl\u00E1 bl\u00E1 bl\u00E1"))),
+                        React.createElement("div", { className: 'form__field col-large-12' },
+                            React.createElement("label", { htmlFor: 'postionApplying', className: 'form__label' }, "Position you are applying for"),
+                            React.createElement("input", { id: 'postionApplying', type: 'text', defaultValue: 'Senio Front end Developer', onKeyUp: this.handleKeyPress, className: 'form__input form__label--large' })),
+                        React.createElement("div", { className: 'form__field col-large-6' },
+                            React.createElement("label", { htmlFor: 'firstName', className: 'form__label' }, "First Name"),
+                            React.createElement("input", { id: 'firstName', type: 'text', defaultValue: 'Mauro', placeholder: '', className: 'form__input form__label--large' })),
+                        React.createElement("div", { className: 'form__field col-large-6' },
+                            React.createElement("label", { htmlFor: 'lastName', className: 'form__label' }, "Last Name"),
+                            React.createElement("input", { id: 'lastName', type: 'text', defaultValue: 'Reis Vieira', placeholder: '', className: 'form__input form__label--large' })),
+                        React.createElement("div", { className: 'form__field col-large-6' },
+                            React.createElement("label", { htmlFor: 'phoneNumber', className: 'form__label' }, "Phone Number"),
+                            React.createElement("input", { id: 'phoneNumber', type: 'text', defaultValue: '917771054', placeholder: '', className: 'form__input form__label--large' })),
+                        React.createElement("div", { className: 'form__field col-large-6' },
+                            React.createElement("label", { htmlFor: 'fieldEmail', className: 'form__label' }, "Email"),
+                            React.createElement("input", { id: 'fieldEmail', type: 'text', defaultValue: 'mauroreisvieira@gmail.com', placeholder: '', className: 'form__input form__label--large' })),
+                        React.createElement("div", { className: 'form__field col-large-6' },
+                            React.createElement("label", { htmlFor: 'fieldBirth', className: 'form__label' }, "Place of birth"),
+                            React.createElement("input", { id: 'fieldBirth', type: 'text', defaultValue: 'Tomar', placeholder: '', className: 'form__input form__label--large' })),
+                        React.createElement("div", { className: 'form__field col-large-6' },
+                            React.createElement("label", { htmlFor: 'fieldDateBirth', className: 'form__label' }, "Date of birth"),
+                            React.createElement("input", { id: 'fieldDateBirth', type: 'text', defaultValue: '1990-06-01', placeholder: '', className: 'form__input form__label--large' })),
+                        React.createElement("div", { className: 'form__field col-large-6' },
+                            React.createElement("label", { htmlFor: 'fieldDriving', className: 'form__label' }, "Driving License"),
+                            React.createElement("input", { id: 'fieldDriving', type: 'text', defaultValue: 'A e A1, B e B1 (SA – 195984 5)', placeholder: '', className: 'form__input form__label--large' })),
+                        React.createElement("div", { className: 'form__field col-large-6' },
+                            React.createElement("label", { htmlFor: 'fieldNationality', className: 'form__label' }, "Nationality"),
+                            React.createElement("input", { id: 'fieldNationality', type: 'text', defaultValue: 'Portuguese', placeholder: '', className: 'form__input form__label--large' })),
+                        React.createElement("div", { className: 'form__field col-large-6' },
+                            React.createElement("label", { htmlFor: 'fieldCity', className: 'form__label' }, "City"),
+                            React.createElement("input", { id: 'fieldCity', type: 'text', defaultValue: 'Leiria', placeholder: '', className: 'form__input form__label--large' })),
+                        React.createElement("div", { className: 'form__field col-large-6' },
+                            React.createElement("label", { htmlFor: 'fieldCode', className: 'form__label' }, "Postal Code"),
+                            React.createElement("input", { id: 'fieldCode', type: 'text', defaultValue: '2410-112', placeholder: '', className: 'form__input form__label--large' })),
+                        React.createElement("div", { className: 'form__field col-large-6' },
+                            React.createElement("label", { htmlFor: 'fieldAddress', className: 'form__label' }, "Address"),
+                            React.createElement("input", { id: 'fieldAddress', type: 'text', defaultValue: 'Rua João Paulo II LT.4 3º E', placeholder: '', className: 'form__input form__label--large' })),
+                        React.createElement("div", { className: 'form__field col-large-6' },
+                            React.createElement("label", { htmlFor: 'fieldCountry', className: 'form__label' }, "Country"),
+                            React.createElement("input", { id: 'fieldCountry', type: 'text', defaultValue: 'Portugal', placeholder: '', className: 'form__input form__label--large' })),
+                        React.createElement("div", { className: 'form__field col-large-12' },
+                            React.createElement("label", { htmlFor: 'fieldMessage', className: 'form__label' }, "Professional Summary"),
+                            React.createElement("textarea", { id: 'fieldMessage', className: 'form__textarea', rows: 6 }, "I'm a Portuguese developer, fascinated by web development, who likes what they do. I love to learn, and share my knowledge, in order to enrich my portfolio. I'm an \"Apple Fanboy\", as well as a Sublime Text evangelist (I love this text editor for code).")),
+                        React.createElement("div", { className: 'form__actions col-large-6' },
+                            React.createElement("button", { className: 'button button--large button--info' }, "Save Changes"))))),
+            React.createElement("main", { className: 'main' },
+                React.createElement("div", { className: 'app-profile' },
+                    React.createElement("div", { className: 'row' },
+                        React.createElement("div", { className: 'col-large-9' },
+                            React.createElement("h1", { className: 'x-large semibold' },
+                                "Mauro Reis Vieira ",
+                                React.createElement("br", null),
+                                React.createElement("span", { className: 'thin medium' }, "Senio Front end Developer"))),
+                        React.createElement("div", { className: 'col-large-3 text-right' },
+                            React.createElement("div", null,
+                                React.createElement("img", { src: "https://pbs.twimg.com/profile_images/913828202832973826/1WWUHoo5_400x400.jpg", className: 'w-7 h-7 circle text-right' })))),
+                    React.createElement("div", { className: 'row' },
+                        React.createElement("div", { className: 'col-large-2' },
+                            React.createElement("ul", { className: 'list text-salmon uppercase' },
+                                React.createElement("li", { className: 'list__item' },
+                                    React.createElement("p", null, "Address")),
+                                React.createElement("li", { className: 'list__item' },
+                                    React.createElement("p", null, "Email")),
+                                React.createElement("li", { className: 'list__item' },
+                                    React.createElement("p", null, "Nationality")))),
+                        React.createElement("div", { className: 'col-large-4' },
+                            React.createElement("ul", { className: 'list' },
+                                React.createElement("li", { className: 'list__item' },
+                                    React.createElement("p", null, "Rua Jo\u00E3o Paulo II LT.4 3\u00BA E")),
+                                React.createElement("li", { className: 'list__item' },
+                                    React.createElement("p", null, "mauroreisvieira@gmail.com")),
+                                React.createElement("li", { className: 'list__item' },
+                                    React.createElement("p", null, "Portuguese")))),
+                        React.createElement("div", { className: 'col-large-2' },
+                            React.createElement("ul", { className: 'list text-salmon uppercase' },
+                                React.createElement("li", { className: 'list__item' },
+                                    React.createElement("p", null, "Phone")),
+                                React.createElement("li", { className: 'list__item' },
+                                    React.createElement("p", null, "Date / Place of Birth")),
+                                React.createElement("li", { className: 'list__item' },
+                                    React.createElement("p", null, "Driving License")))),
+                        React.createElement("div", { className: 'col-large-4' },
+                            React.createElement("ul", { className: 'list' },
+                                React.createElement("li", { className: 'list__item' },
+                                    React.createElement("p", null, "917771054")),
+                                React.createElement("li", { className: 'list__item' },
+                                    React.createElement("p", null, "1990-06-01 / Tomar")),
+                                React.createElement("li", { className: 'list__item' },
+                                    React.createElement("p", null, "A e A1, B e B1 (SA \u2013 195984 5)"))))),
+                    React.createElement("div", { className: 'row' },
+                        React.createElement("div", { className: 'col-large-4' },
+                            React.createElement("h5", { className: 'x-bold' }, "Professional Summary")),
+                        React.createElement("div", { className: 'col-large-8 offset-large-4' },
+                            React.createElement("p", null, "I'm a Portuguese developer, fascinated by web development, who likes what they do. I love to learn, and share my knowledge, in order to enrich my portfolio. I'm an \"Apple Fanboy\", as well as a Sublime Text evangelist (I love this text editor for code).")))))));
     };
     return ProfileComponent;
 }(React.Component));

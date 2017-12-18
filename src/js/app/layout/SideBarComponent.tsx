@@ -11,7 +11,7 @@ export class SideBarComponent extends React.Component  {
             <nav className='sidebar'>
                 <ul className='menu menu--inherit'>
                     <li className='menu__item'>
-                        <Link to='/' className='menu__link tooltip tooltip--right is-active' href='' title='' data-tooltip='Personal Information'>
+                        <Link to='/' className='menu__link tooltip tooltip--right' href='' title='' data-tooltip='Personal Information'>
                             <i className='icon ion-person'></i>
                         </Link>
                     </li>

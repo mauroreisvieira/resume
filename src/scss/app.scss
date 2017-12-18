@@ -48,23 +48,33 @@ body {
   overflow: hidden;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   color: var(--color-primary);
 }
 
-
 hr {
-  height: 2px;
-  width: 100%;
   display: block;
-  border: 0;
+  width: 100%;
+  height: 2px;
   margin-top: 20px;
+  border: 0;
 }
 
 .wrapper {
   display: grid;
-  grid-template-columns: var(--sidebar-w) var(--aside-w) calc(100% - (var(--sidebar-w) + var(--aside-w)));
-  grid-template-areas: "header header header" "sidebar aside main";
+  grid-template-columns: var(--sidebar-w) calc(100% - (var(--sidebar-w)));
+  grid-template-areas: "header header" "sidebar content";
+}
+
+.content {
+  grid-area: content;
+  display: grid;
+  grid-template-columns: var(--aside-w) calc(100% - (var(--aside-w)));
+  grid-template-areas: "aside main";
 }
 
 @import "layout/header";
