@@ -5997,13 +5997,14 @@ var ProfileComponent = /** @class */ (function (_super) {
     __extends(ProfileComponent, _super);
     function ProfileComponent(props) {
         var _this = _super.call(this, props) || this;
+        _this.state = {};
         _this.user = new User_1.default('Mauro Reis Vieir', 27);
-        _this.postionApplying = 'Senior Front end Developerd';
+        _this.state = { value: 'Senior Front end Developer' };
+        _this.handleChange = _this.handleChange.bind(_this);
         return _this;
     }
-    ProfileComponent.prototype.handleKeyPress = function (event) {
-        this.postionApplying = event.target.value;
-        console.log(this.postionApplying);
+    ProfileComponent.prototype.handleChange = function (event) {
+        this.setState({ value: event.target.value });
     };
     ProfileComponent.prototype.render = function () {
         return (React.createElement("div", { className: 'content' },
@@ -6016,7 +6017,7 @@ var ProfileComponent = /** @class */ (function (_super) {
                                 React.createElement("span", { className: 'uppercase small' }, "Write your personal information to bl\u00E1 bl\u00E1 bl\u00E1"))),
                         React.createElement("div", { className: 'form__field col-large-12' },
                             React.createElement("label", { htmlFor: 'postionApplying', className: 'form__label' }, "Position you are applying for"),
-                            React.createElement("input", { id: 'postionApplying', type: 'text', defaultValue: this.postionApplying, onKeyUp: this.handleKeyPress, className: 'form__input form__label--large' })),
+                            React.createElement("input", { id: 'postionApplying', type: 'text', defaultValue: this.state.value, onKeyUp: this.handleChange, className: 'form__input form__label--large' })),
                         React.createElement("div", { className: 'form__field col-large-6' },
                             React.createElement("label", { htmlFor: 'firstName', className: 'form__label' }, "First Name"),
                             React.createElement("input", { id: 'firstName', type: 'text', defaultValue: 'Mauro', placeholder: '', className: 'form__input form__label--large' })),
@@ -6065,7 +6066,7 @@ var ProfileComponent = /** @class */ (function (_super) {
                             React.createElement("h1", { className: 'x-large semibold' },
                                 "Mauro Reis Vieira ",
                                 React.createElement("br", null),
-                                React.createElement("span", { className: 'thin medium' }, this.postionApplying))),
+                                React.createElement("span", { className: 'thin medium' }, this.state.value))),
                         React.createElement("div", { className: 'col-large-3 text-right' },
                             React.createElement("div", null,
                                 React.createElement("img", { src: 'https://pbs.twimg.com/profile_images/913828202832973826/1WWUHoo5_400x400.jpg', className: 'w-7 h-7 circle text-right' })))),
