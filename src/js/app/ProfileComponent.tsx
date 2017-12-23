@@ -8,10 +8,11 @@ export class ProfileComponent extends React.Component {
 
     constructor (props: any) {
         super(props);
+
         this.user = new User('Mauro Reis Vieir', 27);
         this.state = {
             postionApplying: 'Senior Front end Developer',
-            name: this.user.name
+            name: this.user.name,
         };
 
         this.handleChange = this.handleChange.bind(this);

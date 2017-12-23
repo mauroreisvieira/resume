@@ -5930,37 +5930,59 @@ __webpack_require__(65);
 var EmploymentComponent = /** @class */ (function (_super) {
     __extends(EmploymentComponent, _super);
     function EmploymentComponent(props) {
-        return _super.call(this, props) || this;
+        var _this = _super.call(this, props) || this;
+        _this.state = {};
+        _this.state = {
+            postionApplying: 'Senior Front end Developer',
+        };
+        _this.handleChange = _this.handleChange.bind(_this);
+        return _this;
     }
+    EmploymentComponent.prototype.handleChange = function (event) {
+        console.log(event);
+        this.setState({ postionApplying: event.target.value });
+    };
     EmploymentComponent.prototype.render = function () {
-        return (React.createElement("div", { className: 'app-employment' },
-            React.createElement("div", { className: 'row' },
-                React.createElement("div", { className: 'col-large-12' },
-                    React.createElement("h5", { className: 'x-bold' }, "Employment History")),
-                React.createElement("div", { className: 'col-large-12 my-20' },
-                    React.createElement("div", { className: 'flex flex--row flex--content-between' },
-                        React.createElement("div", { className: 'flex flex--column vw-2' },
-                            React.createElement("p", null, "Apr 2013 - May 2016"),
-                            React.createElement("p", { className: 'uppercase text-salmon' }, "Leiria")),
-                        React.createElement("div", { className: 'flex flex--column col-large' },
-                            React.createElement("p", null, "Web Developer"),
-                            React.createElement("p", { className: 'text-salmon' }, "WayAcross")))),
-                React.createElement("div", { className: 'col-large-12 my-20' },
-                    React.createElement("div", { className: 'flex flex--row flex--content-between' },
-                        React.createElement("div", { className: 'flex flex--column vw-2' },
-                            React.createElement("p", null, "May 2016 - Oct 2017"),
-                            React.createElement("p", { className: 'uppercase text-salmon' }, "Leiria")),
-                        React.createElement("div", { className: 'flex flex--column col-large' },
-                            React.createElement("p", null, "Front end Developer"),
-                            React.createElement("p", { className: 'text-salmon' }, "Hi INTERACTIVE")))),
-                React.createElement("div", { className: 'col-large-12 my-20' },
-                    React.createElement("div", { className: 'flex flex--row flex--content-between' },
-                        React.createElement("div", { className: 'flex flex--column vw-2' },
-                            React.createElement("p", null, "Oct 2017 - Present"),
-                            React.createElement("p", { className: 'uppercase text-salmon' }, "Leiria")),
-                        React.createElement("div", { className: 'flex flex--column col-large' },
-                            React.createElement("p", null, "Senior Front end Developer"),
-                            React.createElement("p", { className: 'text-salmon' }, "Namecheap")))))));
+        return (React.createElement("div", { className: 'content' },
+            React.createElement("aside", { className: 'aside' },
+                React.createElement("form", { action: '', className: 'form mt-0' },
+                    React.createElement("div", { className: 'row' },
+                        React.createElement("div", { className: 'col-large-12' },
+                            React.createElement("div", { className: 'aside__header' },
+                                React.createElement("h4", { className: 'text-right' }, "Personal Information"),
+                                React.createElement("span", { className: 'uppercase small' }, "Write your personal information to bl\u00E1 bl\u00E1 bl\u00E1"))),
+                        React.createElement("div", { className: 'form__field col-large-12' },
+                            React.createElement("label", { htmlFor: 'postionApplying', className: 'form__label' }, "Position you are applying for"),
+                            React.createElement("input", { id: 'postionApplying', type: 'text', defaultValue: this.state.postionApplying, onKeyUp: this.handleChange, className: 'form__input form__label--large' }))))),
+            React.createElement("main", { className: 'main' },
+                React.createElement("div", { className: 'app-employment' },
+                    React.createElement("div", { className: 'row' },
+                        React.createElement("div", { className: 'col-large-12' },
+                            React.createElement("h5", { className: 'x-bold' }, "Employment History")),
+                        React.createElement("div", { className: 'col-large-12 my-20' },
+                            React.createElement("div", { className: 'flex flex--row flex--content-between' },
+                                React.createElement("div", { className: 'flex flex--column vw-2' },
+                                    React.createElement("p", null, "Apr 2013 - May 2016"),
+                                    React.createElement("p", { className: 'uppercase text-salmon' }, "Leiria")),
+                                React.createElement("div", { className: 'flex flex--column col-large' },
+                                    React.createElement("p", null, "Web Developer"),
+                                    React.createElement("p", { className: 'text-salmon' }, "WayAcross")))),
+                        React.createElement("div", { className: 'col-large-12 my-20' },
+                            React.createElement("div", { className: 'flex flex--row flex--content-between' },
+                                React.createElement("div", { className: 'flex flex--column vw-2' },
+                                    React.createElement("p", null, "May 2016 - Oct 2017"),
+                                    React.createElement("p", { className: 'uppercase text-salmon' }, "Leiria")),
+                                React.createElement("div", { className: 'flex flex--column col-large' },
+                                    React.createElement("p", null, "Front end Developer"),
+                                    React.createElement("p", { className: 'text-salmon' }, "Hi INTERACTIVE")))),
+                        React.createElement("div", { className: 'col-large-12 my-20' },
+                            React.createElement("div", { className: 'flex flex--row flex--content-between' },
+                                React.createElement("div", { className: 'flex flex--column vw-2' },
+                                    React.createElement("p", null, "Oct 2017 - Present"),
+                                    React.createElement("p", { className: 'uppercase text-salmon' }, "Leiria")),
+                                React.createElement("div", { className: 'flex flex--column col-large' },
+                                    React.createElement("p", null, "Senior Front end Developer"),
+                                    React.createElement("p", { className: 'text-salmon' }, "Namecheap")))))))));
     };
     return EmploymentComponent;
 }(React.Component));
@@ -6001,7 +6023,7 @@ var ProfileComponent = /** @class */ (function (_super) {
         _this.user = new User_1.default('Mauro Reis Vieir', 27);
         _this.state = {
             postionApplying: 'Senior Front end Developer',
-            name: _this.user.name
+            name: _this.user.name,
         };
         _this.handleChange = _this.handleChange.bind(_this);
         return _this;
