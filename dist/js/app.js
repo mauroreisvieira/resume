@@ -6029,7 +6029,6 @@ var ProfileComponent = /** @class */ (function (_super) {
         return _this;
     }
     ProfileComponent.prototype.handleChange = function (event) {
-        console.log(event);
         this.setState({ postionApplying: event.target.value });
     };
     ProfileComponent.prototype.render = function () {

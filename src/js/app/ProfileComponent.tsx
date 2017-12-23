@@ -19,7 +19,6 @@ export class ProfileComponent extends React.Component {
     }
 
     public handleChange(event: any): void {
-        console.log(event);
         this.setState({postionApplying: event.target.value});
     }
 
