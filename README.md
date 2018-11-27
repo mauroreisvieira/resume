@@ -8,7 +8,7 @@ This repository contains my skills, but you can clone, and change for your skill
 ### Clone the repo using Git
 
 ```bash
-git clone https://github.com/maurovieirareis/resume
+git clone https://github.com/mauroreisvieira/resume
 ```
 
 Alternatively you can [download](https://codeload.github.com/maurovieirareis/resume/zip/master) this repository.
